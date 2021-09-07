@@ -31,3 +31,11 @@ font-family: 'Noto Sans KR', sans-serif;
   --weight-regular: 500;
   --weight-light: 300;
 }
+
+/* Button */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
