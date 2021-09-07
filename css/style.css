@@ -32,6 +32,16 @@ font-family: 'Noto Sans KR', sans-serif;
   --weight-light: 300;
 }
 
+/* Universe */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Button */
 button {
   background-color: transparent;
