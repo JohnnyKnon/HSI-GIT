@@ -252,6 +252,9 @@ button {
 
 /* About */
 #about{
-  width: 100%;
+  max-width: 1200px;
+  /* margin */
+  margin: auto;
+  /* size */
   height: 100vh;
 }
