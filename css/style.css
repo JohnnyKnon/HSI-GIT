@@ -1,7 +1,3 @@
-/* 
-font-family: 'Libre Baskerville', serif;
-font-family: 'Noto Sans KR', sans-serif;
-*/
 
 /* Variable */
 :root {
@@ -21,10 +17,15 @@ font-family: 'Noto Sans KR', sans-serif;
   --font-large: 60px;
   --font-big: 40px;
   --font-regular: 35px;
-  --font-small: 20px;
   --font-normal: 30px;
+  --font-logo-size: 26px;
+  --font-small: 20px;
   --font-micro: 16px;
 
+
+  /* Font Family */
+  --font-logo: 'Libre Baskerville', serif;
+  --font-kr: 'Noto Sans KR', sans-serif;
   /* Font Weight */
   --weight-italic: 400;
   --weight-bold: 700;
@@ -42,10 +43,127 @@ body {
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
+ul,li{
+  list-style: none;
+}
+
 /* Button */
 button {
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+/* Nav */
+#navbar{
+  /* position */
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width */
+  max-width: 1200px;
+  /* margin */
+  margin: auto;
+  z-index: 1000;
+}
+
+.navbar__logo{
+  /* font */
+  font-family: var(--font-logo);
+  font-style: italic;
+  font-weight: var(--weight-italic);
+  font-size: var(--font-logo-size);
+  /* color */
+  color: var(--color-white);
+  /* margin */
+  margin-left: 20px;
+}
+
+.navbar__contents{
+  font-family: var(--font-kr);
+  font-weight: var(--weight-regular);
+}
+
+.navbar__contents ul{
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-right: 20px;
+}
+
+.navbar__items a{
+  position: relative;
+  font-size: var(--font-small);
+  color: var(--color-white);
+  /* padding */
+  padding: 5px 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar__items a::before{
+  content: "";
+  /* Size */
+  width: 0%;
+  height: 1px;
+  /* background Color */
+  background-color: var(--color-orange);
+  /* position */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar__items a:hover{
+  color: var(--color-orange);
+  transition: all 200ms ease-in-out;
+}
+
+.navbar__items a:hover::before{
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+/* Main */
+#main{
+  /* Scroll snap */
+  scroll-snap-type: y mandatory;
+  /* margin */
+  margin: auto;
+}
+
+#main section{
+  scroll-snap-align: start;
+}
+
+/* Home */
+#home{
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* position */
+  position: relative;
+  /* Scroll height */
+  height: 100vh;
+}
+
+.home__img{
+  position: absolute;
+  /* BG */
+  background: url("../images/HSIBG.jpg") no-repeat center/cover;
+  /* filter */
+  filter: brightness(40%);
+  /* size */
+  width: 100%;
+  height: 100vh;
 }
