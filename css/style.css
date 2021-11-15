@@ -94,7 +94,6 @@ button {
   /* font */
   font-family: var(--font-logo);
   font-style: italic;
-  font-weight: var(--weight-italic);
   font-size: var(--font-logo-size);
   /* color */
   color: var(--color-white);
@@ -145,15 +144,7 @@ button {
   width: 100%;
   transition: all 300ms ease-in-out;
 }
-/* aside */
-#come{
-  position: fixed;
-  /* center */
-  top: 50%;
-  transform: translateY(-50%);
-  /* left */
-  left: 40px;
-}
+
 
 .come__btn{
   /* font */
@@ -171,7 +162,6 @@ button {
 }
 
 .come__btn:hover{
-  border-color: var(--color-white);
   background-color: var(--color-black);
   color: var(--color-white);
   transition: all 300ms ease-in-out;
@@ -292,7 +282,8 @@ button {
 
 .about__header{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   /* position */
   position: relative;
   top: 130px;
@@ -302,4 +293,47 @@ button {
   font-family: var(--font-kr);
   font-size: var(--font-big);
   font-weight: var(--weight-bold);
+}
+
+.about__header p{
+  position: relative;
+  top: -35px;
+  /* font */
+  font-family: var(--font-kr);
+  word-spacing: 3px;
+}
+
+.about__card__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* position */
+  position: relative;
+  top: 135px;
+}
+
+.about__cards{
+  width: 500px;
+  height: 600px;
+  transition: all 400ms ease-in-out;
+}
+
+.intro__card{
+  background: url("../images/introCard.jpg") no-repeat -140px/cover;
+}
+
+.group__card{
+  background: url("../images/groupCard.jpg") no-repeat -90px/cover;
+}
+
+.business__card{
+  background: url("../images/businessCard.jpg") no-repeat -200px/cover;
+}
+
+.about__cards:hover{
+  background-color: var(--color-light-blue);
+  background-image: unset;
+  transition: all 400ms ease-in-out;
 }
