@@ -387,6 +387,28 @@ button {
   }
 
 }
+/* 768px max */
+@media screen and (max-width:768px) {
+  /* home */
+  .home__main__txt__wrap h1{
+    width: 340px;
+    text-align: center;
+  }
+  
+  .home__main__p{
+    color: var(--color-grey);
+    width: 240px;
+    text-align: center;
+  }
+  
+  .reponsive__span{
+    font-family: var(--font-logo);
+    font-style: italic;
+  }
+
+}
+
+
 /* max1110px ~ min 737px */
 @media screen and (max-width: 1110px) and (min-width: 737px){
   /* about */
