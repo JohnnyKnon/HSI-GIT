@@ -286,7 +286,7 @@ button {
 
 .about__header h1{
   font-family: var(--font-kr);
-  font-size: var(--font-large);
+  font-size: var(--font-big);
   font-weight: var(--weight-bold);
 }
 
@@ -379,12 +379,16 @@ button {
   transition: all 400ms ease-in-out;
 }
 
-@media screen and (max-width: 1110px) and (min-width: 737px){
+/* 1110px max */
+@media  screen and (max-width: 1110px) {
   /* main */
   #main{
     scroll-snap-type: none;
   }
 
+}
+/* max1110px ~ min 737px */
+@media screen and (max-width: 1110px) and (min-width: 737px){
   /* about */
   .about__cards{
     width: 350px;
