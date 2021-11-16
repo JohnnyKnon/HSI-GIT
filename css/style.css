@@ -97,7 +97,7 @@ button {
 .navbar__contents ul{
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 25px;
 }
 
 .navbar__items a{
@@ -108,6 +108,7 @@ button {
   /* padding */
   padding: 5px 5px;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .navbar__items a::before{
@@ -280,12 +281,12 @@ button {
   align-items: center;
   /* position */
   position: relative;
-  top: 150px;
+  top: 90px;
 }
 
 .about__header h1{
   font-family: var(--font-kr);
-  font-size: var(--font-big);
+  font-size: var(--font-large);
   font-weight: var(--weight-bold);
 }
 
@@ -307,7 +308,7 @@ button {
   flex-wrap: wrap;
   /* position */
   position: relative;
-  top: 150px;
+  top: 130px;
 }
 
 .about__cards{
@@ -324,10 +325,9 @@ button {
 }
 
 .about__cards h2{
-  color: var(--color-white);
+  color: rgb(73, 73, 73);
   font-size: var(--font-regular);
-  opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(60px);
   transition: all 400ms ease-in-out;
 }
 
@@ -346,7 +346,7 @@ button {
 }
 .about__cards button:hover, .about__cards button:focus{
   background-color: var(--color-white);
-  color: var(--color-black)     ;
+  color: var(--color-black);
 }
 
 .about__cards:nth-child(1){
@@ -367,7 +367,13 @@ button {
   background-image: unset;
 }
 
-.about__cards:hover h2,.about__cards:hover button{
+.about__cards:hover h2{
+  color: var(--color-white);
+  transform: translateY(0);
+  transition: all 400ms ease-in-out;
+}
+
+.about__cards:hover button{
   opacity: 1;
   transform: translateY(0);
   transition: all 400ms ease-in-out;
