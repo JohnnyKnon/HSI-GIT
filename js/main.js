@@ -9,7 +9,16 @@ navbarMenu.addEventListener('click', (event)=>{ // 클릭한 이벤트 추가
         return;
     }
    scrollIntoView(link);
+
+   navbarMenu.classList.remove('open');
 });
+
+const navbarToggleBtn = document.querySelector('.toggle__btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
+
 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector); //scrollIntoView엘리멘트 의 부모 컨테이너로 스크롤되는 메소드
