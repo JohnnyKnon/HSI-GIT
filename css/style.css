@@ -416,6 +416,50 @@ button {
   font-weight: var(--weight-bold);
 }
 
+.work__top{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin top */
+  margin-top: 120px;
+}
+
+.work__top img{
+  width: 450px;
+  -webkit-box-shadow: 5px 5px 7px -1px #262626; 
+  box-shadow: 5px 5px 7px -1px #262626;
+}
+.work__top__p{
+  /* outside */
+  position: relative;
+  background-color: var(--color-white);
+  width: 350px;
+  height: 270px;
+  border-radius: 10px;
+/* inside */
+  display: flex;
+  flex-direction: column;
+  gap: 2px; 
+}
+
+.work__title{
+  position: absolute;
+  top: -60px;
+  font-size: var(--font-big);
+  color: var(--color-white);
+}
+
+.work__top__p span{
+  /* move */
+  margin-top: 14px;
+  margin-left: 30px;
+  /* font */
+  font-family: var(--font-kr);
+  font-weight: var(--weight-regular);
+}
+
+
 /* Responsive
 _____________________________________________________________ */
 /* 1110px max */
@@ -427,6 +471,14 @@ _____________________________________________________________ */
   
 
 }
+
+/* 817px */
+@media screen and (max-width: 818px){
+  #work{
+    height: 1500px;
+  }
+}
+
 /* 738px max */
 @media screen and (max-width:738px) {
   /* Nav */
@@ -550,5 +602,11 @@ _____________________________________________________________ */
   /* work */
   #work{
     margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .work__top img{
+    width: 340px;
   }
 }
