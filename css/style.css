@@ -395,19 +395,19 @@ button {
 /* Work */
 #work{
   background-color: var(--color-grey);
-  display: flex;
-  justify-content: center;
 }
 
 .work__wrap{
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin: auto;
 }
 
 .work__header{
   position: relative;
   top: 100px;
+  text-align: center;
 }
 
 .work__header h1{
@@ -415,7 +415,6 @@ button {
   font-size: var(--font-big);
   font-weight: var(--weight-bold);
 }
-
 
 /* Responsive
 _____________________________________________________________ */
