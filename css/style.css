@@ -406,7 +406,7 @@ _____________________________________________________________ */
   }
 
 }
-/* 768px max */
+/* 738px max */
 @media screen and (max-width:738px) {
   /* Nav */
   #navbar{
@@ -494,7 +494,12 @@ _____________________________________________________________ */
   }
   
 }
-
+/* 768px max */
+@media screen and (max-width:735px) {
+  #work{
+    margin-top: 400px;
+  }
+}
 
 /* max1110px ~ min 737px */
 @media screen and (max-width: 1110px) and (min-width: 737px){
