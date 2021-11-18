@@ -4,6 +4,7 @@
   /* Color */
   --color-black: #000;
   --color-blue: #082bbc;
+  --color-dark-blue: #161E54;
   --color-white: #fff;
   --color-orange: #ff8a02;
   --color-grey: #b9b9b9;
@@ -186,7 +187,7 @@ button {
 
 .scroll{
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   scroll-snap-align: start;
 }
 
@@ -206,7 +207,7 @@ button {
   filter: brightness(40%);
   /* size */
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   z-index: 10;
 }
 .home__main__txt__wrap{
@@ -335,7 +336,8 @@ button {
 }
 
 .about__cards h2{
-  color: rgb(73, 73, 73);
+  color: var(--color-white);
+  mix-blend-mode: difference;
   font-size: var(--font-regular);
   transform: translateY(60px);
   transition: all 400ms ease-in-out;
@@ -378,6 +380,7 @@ button {
 }
 
 .about__cards:hover h2{
+  mix-blend-mode: unset;
   color: var(--color-white);
   transform: translateY(0);
   transition: all 400ms ease-in-out;
@@ -389,9 +392,30 @@ button {
   transition: all 400ms ease-in-out;
 }
 
+/* Work */
 #work{
   background-color: var(--color-grey);
+  display: flex;
+  justify-content: center;
 }
+
+.work__wrap{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.work__header{
+  position: relative;
+  top: 100px;
+}
+
+.work__header h1{
+  font-family: var(--font-kr);
+  font-size: var(--font-big);
+  font-weight: var(--weight-bold);
+}
+
 
 /* Responsive
 _____________________________________________________________ */
@@ -401,9 +425,7 @@ _____________________________________________________________ */
   #main{
     scroll-snap-type: none;
   }
-  #work{
-    margin-top: 200px;
-  }
+  
 
 }
 /* 738px max */
@@ -457,6 +479,17 @@ _____________________________________________________________ */
     gap: 6px;
     z-index: 1000;
   }
+  /* Times */
+  .times-a{
+    transform: rotate(50deg) translateY(6px);
+
+  }
+  .times-b{
+    display: none;
+  }
+  .times-c{
+    transform: rotate(-50deg) translateY(-6px);
+  }
 
   .hamburger{
     background-color: white;
@@ -492,13 +525,11 @@ _____________________________________________________________ */
     /* Img */
     background-position: center;
   }
-  
-}
-/* 768px max */
-@media screen and (max-width:735px) {
+
   #work{
     margin-top: 400px;
   }
+  
 }
 
 /* max1110px ~ min 737px */
@@ -516,5 +547,9 @@ _____________________________________________________________ */
     width: 720px;
     height: 300px;
     background-position: center;
+  }
+  /* work */
+  #work{
+    margin-top: 150px;
   }
 }

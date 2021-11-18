@@ -13,10 +13,19 @@ navbarMenu.addEventListener('click', (event)=>{ // 클릭한 이벤트 추가
    navbarMenu.classList.remove('open');
 });
 
+// Toggle 
+const toggleA = document.querySelector('.toggle-a');
+const toggleB = document.querySelector('.toggle-b');
+const toggleC = document.querySelector('.toggle-c');
 const navbarToggleBtn = document.querySelector('.toggle__btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
+    toggleA.classList.toggle('times-a');
+    toggleB.classList.toggle('times-b');
+    toggleC.classList.toggle('times-c');
 });
+
+
 
 
 
