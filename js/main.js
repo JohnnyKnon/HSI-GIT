@@ -33,17 +33,35 @@ const workLogos = document.querySelector('.work__logos');
 const workWrap = document.querySelector('.work__logo__wrap');
 const logoBtnWrap = document.querySelector('.work__bottom');
 
-logoBtnWrap.addEventListener('mouseover', (event)=>{
-    const worktarget = event.target;
-    const logos = worktarget.dataset.logo;
-    ClassListOver(logos);
-});
 
-logoBtnWrap.addEventListener('mouseout', (event)=>{
-    const worktarget = event.target;
-    const logos = worktarget.dataset.logo;
-    ClassListOut(logos);
-});
+function isMobile(){
+	let UserAgent = navigator.userAgent;
+	if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)   
+	{
+		return true;
+	}else{
+	    return false;
+	}
+}
+
+if(isMobile()){
+	
+}else{
+	logoBtnWrap.addEventListener('mouseover', (event)=>{
+        const worktarget = event.target;
+        const logos = worktarget.dataset.logo;
+        if(logos == null){
+            return;
+        }
+        ClassListOver(logos);
+    });
+    logoBtnWrap.addEventListener('mouseout', (event)=>{
+        const worktarget = event.target;
+        const logos = worktarget.dataset.logo;
+        ClassListOut(logos);
+    });
+    
+}
 
 function ClassListOver(selector){
     workLogos.classList.add(selector);
