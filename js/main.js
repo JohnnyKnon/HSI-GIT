@@ -55,6 +55,7 @@ if(isMobile()){
         }
         ClassListOver(logos); 
 
+        // Product Introduce
         let x = document.getElementsByClassName("company__introduce")[0];
         if(logos === "sonats"){
             x.innerText="JS"; 
