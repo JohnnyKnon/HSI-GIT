@@ -431,6 +431,7 @@ button {
   top: -20px;
   /* flex */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* Size */
@@ -476,6 +477,12 @@ button {
   width: 215px;
   height: 100px;
   background: url("../images/Havelsan-750x375\ \(1\).png")no-repeat center/cover;
+}
+
+.company__introduce{
+  font-family: var(--font-kr);
+  font-size: var(--font-micro);
+  color: var(--color-orange);
 }
 
 

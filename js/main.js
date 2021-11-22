@@ -53,8 +53,21 @@ if(isMobile()){
         if(logos == null){
             return;
         }
-        ClassListOver(logos);
+        ClassListOver(logos); 
+
+        let x = document.getElementsByClassName("company__introduce")[0];
+        if(logos === "sonats"){
+            x.innerText="JS"; 
+        }else if(logos === "thyss"){
+            x.innerText="HTML"; 
+        }else if(logos === "plasan"){
+            x.innerText="PHP";
+        }else{
+            x.innerText="Node.js"
+        }
+
     });
+
     logoBtnWrap.addEventListener('mouseout', (event)=>{
         const worktarget = event.target;
         const logos = worktarget.dataset.logo;
@@ -63,6 +76,7 @@ if(isMobile()){
     
 }
 
+// Mouse over out
 function ClassListOver(selector){
     workLogos.classList.add(selector);
     workWrap.classList.add('logo__wrap--visible');
@@ -72,9 +86,7 @@ function ClassListOut(selector){
     workLogos.classList.remove(selector);
     workWrap.classList.remove('logo__wrap--visible');
 }
-
-
-
+// Nav Scroll
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector); //scrollIntoView엘리멘트 의 부모 컨테이너로 스크롤되는 메소드
     scrollTo.scrollIntoView({behavior: "smooth"});
