@@ -475,9 +475,12 @@ button {
 }
 
 .company__introduce{
+  width: 570px;
+  text-align: center;
   font-family: var(--font-kr);
   font-size: var(--font-micro);
-  color: var(--color-orange);
+  color: var(--color-dark-blue);
+  line-height: 30px;
 }
 
 
