@@ -394,6 +394,7 @@ button {
 
 /* Work */
 #work{
+  position: relative;
   background-color: var(--color-grey);
 }
 
@@ -406,7 +407,7 @@ button {
 
 .work__header{
   position: relative;
-  top: 100px;
+  top: 80px;
   text-align: center;
 }
 
@@ -424,6 +425,59 @@ button {
   /* margin top */
   margin-top: 120px;
 }
+
+.work__logo__wrap{
+  position: absolute;
+  top: -20px;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Size */
+  width: 80%;
+  height: 350px;
+  /* bg color */
+  background-color: var(--color-grey);
+  /* visiblity */
+  visibility: hidden;
+  /* opacity */
+  opacity: 0;
+  /* transition */
+  transition: all 300ms ease-in-out;
+  z-index: 100;
+}
+
+.logo__wrap--visible{
+  visibility: visible;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.sonats{
+  width: 215px;
+  height: 90px;
+  background: url("../images/SONATS-couleur-2.png")no-repeat center/cover;
+
+}
+
+.thyss{
+  width: 230px;
+  height: 200px;
+  background: url("../images/Thyssenkrupp_logo_logotype-700x482.png")no-repeat center/cover;
+}
+
+.plasan{
+  width: 300px;
+  height: 100px;
+  background: url("../images/Logo-Plasan-300x99.jpg")no-repeat center/cover;
+}
+
+.havelsan{
+  width: 215px;
+  height: 100px;
+  background: url("../images/Havelsan-750x375\ \(1\).png")no-repeat center/cover;
+}
+
 
 .work__top img{
   width: 450px;
@@ -502,6 +556,14 @@ _____________________________________________________________ */
   }
   #work{
     height: 1200px;
+  }
+}
+/* 1062px */
+@media screen and (max-width:1062px) and (min-width:794px){
+  .work__bottom{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 80px;
   }
 }
 

@@ -11,6 +11,9 @@ navbarMenu.addEventListener('click', (event)=>{ // 클릭한 이벤트 추가
    scrollIntoView(link);
 
    navbarMenu.classList.remove('open');
+   toggleA.classList.remove('times-a');
+   toggleB.classList.remove('times-b');
+   toggleC.classList.remove('times-c');
 });
 
 // Toggle 
@@ -25,7 +28,32 @@ navbarToggleBtn.addEventListener('click', () => {
     toggleC.classList.toggle('times-c');
 });
 
+// MouseOver Out
+const workLogos = document.querySelector('.work__logos');
+const workWrap = document.querySelector('.work__logo__wrap');
+const logoBtnWrap = document.querySelector('.work__bottom');
 
+logoBtnWrap.addEventListener('mouseover', (event)=>{
+    const worktarget = event.target;
+    const logos = worktarget.dataset.logo;
+    ClassListOver(logos);
+});
+
+logoBtnWrap.addEventListener('mouseout', (event)=>{
+    const worktarget = event.target;
+    const logos = worktarget.dataset.logo;
+    ClassListOut(logos);
+});
+
+function ClassListOver(selector){
+    workLogos.classList.add(selector);
+    workWrap.classList.add('logo__wrap--visible');
+}
+
+function ClassListOut(selector){
+    workLogos.classList.remove(selector);
+    workWrap.classList.remove('logo__wrap--visible');
+}
 
 
 
