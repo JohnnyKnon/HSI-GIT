@@ -287,9 +287,21 @@ button {
 
 /* About */
 #about{
+  position: relative;
   max-width: 1200px;
   /* margin */
   margin: auto;
+}
+
+
+ 
+
+.pop__header{
+  font-family: var(--font-kr);
+  color: black;
+  position: relative;
+  top: 100px;
+  z-index: 500;
 }
 
 .about__header{
@@ -558,7 +570,7 @@ button {
 
 .news__header{
   position: relative;
-  top: 150px;
+  top: 100px;
   text-align: center;
 }
 
@@ -573,7 +585,9 @@ button {
 
 /* Contact Us */
 #contact{
+  position: relative;
   background-color: var(--color-grey);
+  height: 1000px;
 }
 
 .contact__wrap{
@@ -582,21 +596,127 @@ button {
 
 .contact__header{
   position: relative;
-  top: 150px;
+  top: 100px;
   text-align: center;
+}
+
+.contact__main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font */
+  font-family: var(--font-kr);
+}
+
+.address{
+  line-height: 5px;
+}
+
+.contact__info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__info__header{
+  /* font */
+  font-weight: var(--weight-bold);
+  font-size: var(--font-logo-size);
+  color: var(--color-dark-blue);
+}
+
+.contact__others{
+  line-height: 1px;
+}
+
+.others__group{
+  line-height: 35px;
+}
+
+.others__li span{
+  font-weight: var(--weight-bold);
+}
+
+.short-1{
+  letter-spacing: 11px;
+}
+
+.short-2{
+  letter-spacing: 10px;
+}
+
+.short-3{
+  letter-spacing: 3.5px;
+}
+
+#footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 135px;
+  background-color: var(--color-black);
+}
+
+.footer__wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  /* line height */
+  line-height: 10px;
+}
+
+.footer__logo{
+  font-family: var(--font-logo);
+  font-style: italic;
+  color: var(--color-white);
+}
+
+.footer__wrap p{
+  font-family: var(--font-kr);
+  color: var(--color-white);
 }
 
 
 /* Responsive
 _____________________________________________________________ */
+/* 1359px max */
+@media  screen and (max-width: 1379px) {
+  /* Contact Us */
+  .contact__main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
+
+
 /* 1110px max */
 @media  screen and (max-width: 1110px) {
   /* main */
   #main{
     scroll-snap-type: none;
   }
+
+  .about__pop__box{
+    height: 1200px;
+  }
+
+
+}
+
+/* 1110px max */
+@media  screen and (max-width: 1060px) {
   #work{
-    height: 1000px;
+    height: 1200px;
   }
 }
 /* 1062px */
@@ -610,9 +730,11 @@ _____________________________________________________________ */
 
 /* 817px */
 @media screen and (max-width: 818px){
+  /* work */
   #work{
     height: 1500px;
   }
+  
 }
 
 /* 738px max */
