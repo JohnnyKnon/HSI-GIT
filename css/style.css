@@ -293,17 +293,6 @@ button {
   margin: auto;
 }
 
-
- 
-
-.pop__header{
-  font-family: var(--font-kr);
-  color: black;
-  position: relative;
-  top: 100px;
-  z-index: 500;
-}
-
 .about__header{
   display: flex;
   flex-direction: column;
@@ -713,7 +702,7 @@ _____________________________________________________________ */
 
 }
 
-/* 1110px max */
+/* 1060px max */
 @media  screen and (max-width: 1060px) {
   #work{
     height: 1200px;
@@ -727,6 +716,7 @@ _____________________________________________________________ */
     margin-top: 80px;
   }
 }
+
 
 /* 817px */
 @media screen and (max-width: 818px){
