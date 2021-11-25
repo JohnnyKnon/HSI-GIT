@@ -1,0 +1,35 @@
+
+/* Variable */
+:root {
+    /* Color */
+    --color-black: #000;
+    --color-blue: #082bbc;
+    --color-dark-blue: #161E54;
+    --color-white: #fff;
+    --color-orange: #ff8a02;
+    --color-grey: #e9e8e8;
+    --color-light-blue: #757ec3;
+    --color-light-orange: #f0b46f;
+
+    /* BOX COLOR */
+    --box-color-blue: #0128cb;
+
+    /* Font Size */
+    --font-large: 60px;
+    --font-big: 40px;
+    --font-regular: 35px;
+    --font-normal: 30px;
+    --font-logo-size: 26px;
+    --font-small: 20px;
+    --font-micro: 16px;
+
+
+    /* Font Family */
+    --font-logo: 'Libre Baskerville', serif;
+    --font-kr: 'Noto Sans KR', sans-serif;
+    /* Font Weight */
+    --weight-italic: 400;
+    --weight-bold: 700;
+    --weight-regular: 500;
+    --weight-light: 300;
+}
