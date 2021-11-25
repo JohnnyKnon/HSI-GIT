@@ -8,12 +8,12 @@ navbarMenu.addEventListener('click', (event)=>{ // 클릭한 이벤트 추가
     if(link == null){
         return;
     }
-   scrollIntoView(link);
+    scrollIntoView(link);
 
-   navbarMenu.classList.remove('open');
-   toggleA.classList.remove('times-a');
-   toggleB.classList.remove('times-b');
-   toggleC.classList.remove('times-c');
+    navbarMenu.classList.remove('open');
+    toggleA.classList.remove('times-a');
+    toggleB.classList.remove('times-b');
+    toggleC.classList.remove('times-c');
 });
 
 // Toggle 
