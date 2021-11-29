@@ -75,8 +75,6 @@ button {
 }
 
 /* Nav */
-
-/* Nav */
 #navbar {
   /* position */
   position: fixed;
@@ -155,95 +153,194 @@ button {
   width: 100%;
   transition: all 300ms ease-in-out;
 }
+/* main */
 
-
-/* Sonats */
-#sonats{
-    position: relative;
-    width: 100%;
+/* place */
+.places {
+  font-family: var(--font-kr);
+  color: var(--color-white);
 }
 
-.sonats__bg{
-    position: absolute;
-    background: url("../images/sonats-img.png") no-repeat center/cover;
-    filter: brightness(30%);
-    width: 100%;
-    height: 100vh;
-    z-index: 10;
-}
-
-.sonats__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.sonats__title{
-    font-size: var(--font-large);
-    color: var(--color-white);
-    z-index: 100;
-    
-}
-
-.sonats__description{
-    font-family: var(--font-kr);
-    color: var(--color-grey);
-    font-weight: var(--weight-light);
-    font-size: var(--font-small);
-    text-align: center;
-    line-height: 35px;
-    /* width */
-    width: 53%;
-    z-index: 100;
-    /* position */
-    position: relative;
-    top: -20px;
-}
-
-.sonats__scroll{
-    font-family: var(--font-kr);
-    text-align: center;
-    color: var(--color-dark-grey);
-    font-size: var(--font-small);
-    /* position */
-    position: relative;
-    top: 8%;
-    z-index: 100;
-    animation-name: scrollUpDown;
-    animation-duration: 1500ms;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-}
-
-.sonats__scroll__txt{
-    letter-spacing: 15px;
-}
-
-.scroll__icon{
-    position: relative;
-    top: -10px;
-    /* font */
-    color: var(--color-white);
-}
 /* Animation */
 @keyframes scrollUpDown {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(15px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Sonats */
+#sonats {
+  position: relative;
+  width: 100%;
+}
+
+.sonats__bg {
+  position: absolute;
+  background: url("../images/sonats-img.png") no-repeat center/cover;
+  filter: brightness(30%);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.sonats__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.sonats__title {
+  font-size: var(--font-large);
+  color: var(--color-white);
+  z-index: 100;
+}
+
+.sonats__description {
+  font-family: var(--font-kr);
+  color: var(--color-grey);
+  font-weight: var(--weight-light);
+  font-size: var(--font-small);
+  text-align: center;
+  line-height: 35px;
+  /* width */
+  width: 53%;
+  z-index: 100;
+  /* position */
+  position: relative;
+  top: -20px;
+}
+
+.sonats__scroll {
+  font-family: var(--font-kr);
+  text-align: center;
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  /* position */
+  position: relative;
+  top: 8%;
+  z-index: 100;
+  animation-name: scrollUpDown;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.sonats__scroll__txt {
+  letter-spacing: 15px;
+}
+
+.scroll__icon {
+  position: relative;
+  top: -10px;
+  /* font */
+  color: var(--color-white);
+}
+
+/* Sonats Merchandise */
+.sonats__merchandise {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 100vh;
+}
+
+.sonats__LR__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 340px;
+}
+
+.sonats__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.sonats__header {
+  position: relative;
+  top: 120px;
+  left: 50px;
+  /* flex */
+  display: flex;
+  flex-direction: column;
+}
+
+.sonats__header img {
+  width: 250px;
+}
+
+.sonats__place {
+  position: relative;
+  top: -30px;
+  left: 69px;
+}
+
+.sonats__list {
+  position: relative;
+  top: 100px;
+  /* text */
+  line-height: 55px;
+}
+
+.sonats__list__item {
+  font-size: 14px;
+  font-family: var(--font-kr);
+  font-weight: var(--weight-light);
+  color: var(--color-white);
+}
+
+.sonats__list__item:nth-child(1) {
+  display: block;
+  border-top: 1px solid var(--color-dark-grey);
+}
+
+.sonats__btn {
+  position: relative;
+  top: 120px;
+  left: 35px;
+  /* width */
+  width: 245px;
+  height: 50px;
+  /* margin */
+  margin-bottom: 30px;
+  /* border */
+  border: 1px solid var(--color-white);
+  /* font */
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 300ms ease-out;
+  /* spacing */
+  word-spacing: 5px;
 }
 
 
+.sonats__btn:hover,
+.sonats__btn:focus {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: all 300ms ease-out;
+}
+
+/* sonats right */
+.sonats__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
+/* Merchnaises Responsive
+@media screen and (max-width: 738px) {
+} */
 /* 738px max */
 @media screen and (max-width: 738px) {
   /* Nav */
@@ -317,8 +414,8 @@ button {
 
   /* Main */
   /* Sonats */
-  .sonats__description{
-      text-align: justify;
-      width: 77%;
+  .sonats__description {
+    text-align: justify;
+    width: 77%;
   }
 }
