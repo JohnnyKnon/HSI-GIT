@@ -1,157 +1,225 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Sans+KR:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <!-- JS Link -->
     <script src="js/main.js" defer></script>
     <title>H.S.I | Main</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Nav -->
     <nav id="navbar">
-        <a href="#" class="navbar__logo"><h1>HSI</h1></a>
-        <section class="navbar__contents">
-            <ul class="navbar__menu">
-                <li class="navbar__items"><a data-link="#home">Home</a></li>
-                <li class="navbar__items"><a data-link="#about">About</a></li>
-                <li class="navbar__items"><a data-link="#work">Work</a></li>
-                <li class="navbar__items"><a data-link="#news">News</a></li>
-                <li class="navbar__items"><a data-link="#contact">Contact Us</a></li>
-            </ul>
-        </section>
-        <div class="toggle__btn">
-            <span class="hamburger toggle-a"></span>
-            <span class="hamburger toggle-b"></span>
-            <span class="hamburger toggle-c"></span>
-        </div>
+      <a href="#" class="navbar__logo"><h1>HSI</h1></a>
+      <section class="navbar__contents">
+        <ul class="navbar__menu">
+          <li class="navbar__items"><a data-link="#home">Home</a></li>
+          <li class="navbar__items"><a data-link="#about">About</a></li>
+          <li class="navbar__items"><a data-link="#work">Work</a></li>
+          <li class="navbar__items"><a data-link="#news">News</a></li>
+          <li class="navbar__items"><a data-link="#contact">Contact Us</a></li>
+        </ul>
+      </section>
+      <div class="toggle__btn">
+        <span class="hamburger toggle-a"></span>
+        <span class="hamburger toggle-b"></span>
+        <span class="hamburger toggle-c"></span>
+      </div>
     </nav>
     <!-- Main -->
     <main id="main" role="main">
-        <section id="home" class="scroll">
-            <div class="home__img"></div>
-            <header class="home__main__txt__wrap">
-                <h1>글로벌 비즈니스의 미래를 열어가는 <span class="reponsive__span">HSI</span></h1>
-                <p class="home__main__p">국내외 기술 장비와 다양한 제품을 제공하는 글로벌 선도기업 HSI 방문을 환영합니다</p>
-                <button class="home__pdf__btn">자세한 내용 PDF 다운로드</button>
-            </header>
-        </section>
-        <!-- About -->
-        <section id="about" class="scroll">
-            <header class="about__header">
-                <h1 class="header__txt">About</h1>
-            </header>
-            
-            <div class="about__card__container">
-                <div class="about__cards">
-                    <h2>회사소개</h2>
-                    <button class="layer__card__about" type="button" onclick="location.href='html/about.html'">바로가기</button>
+      <section id="home" class="scroll">
+        <div class="home__img"></div>
+        <header class="home__main__txt__wrap">
+          <h1>
+            글로벌 비즈니스의 미래를 열어가는
+            <span class="reponsive__span">HSI</span>
+          </h1>
+          <p class="home__main__p">
+            국내외 기술 장비와 다양한 제품을 제공하는 글로벌 선도기업 HSI 방문을
+            환영합니다
+          </p>
+          <button class="home__pdf__btn">자세한 내용 PDF 다운로드</button>
+        </header>
+      </section>
+      <!-- About -->
+      <section id="about" class="scroll">
+        <header class="about__header">
+          <h1 class="header__txt">About</h1>
+        </header>
+
+        <div class="about__card__container">
+          <div class="about__cards">
+            <h2>회사소개</h2>
+            <button
+              class="layer__card__about"
+              type="button"
+              onclick="location.href='html/about.html'"
+            >
+              바로가기
+            </button>
+          </div>
+          <div class="about__cards">
+            <h2>조직도</h2>
+            <button class="layer__card__group">바로가기</button>
+          </div>
+          <div class="about__cards">
+            <h2>산업분야</h2>
+            <button class="layer__card__industry">바로가기</button>
+          </div>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="scroll">
+        <div class="work__wrap max-width">
+          <header class="work__header">
+            <h1 class="header__txt">Work & Service</h1>
+          </header>
+          <section
+            class="work__top"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div class="work__logo__wrap">
+              <div class="work__logos"></div>
+              <p class="company__introduce"></p>
+            </div>
+            <img src="images/work-a.jpg" alt="work photo" />
+            <p class="work__top__p">
+              <span class="work__title"> Work </span>
+              <span class="work__span">
+                - 해외 업체 생산 제품 판매 및 대여 <br />
+                - 해외업체의 홍보 마케팅 대행
+              </span>
+              <span class="work__span">
+                - 국내(외) 업체간 에이전트 업무 <br />
+                - 해외 업체의 한국 대리점 업무 대행
+              </span>
+              <span class="work__span">
+                - 국내 기업 및 연구소에서 의뢰하는 <br />
+                기술 테스트 연구 용역 대행
+              </span>
+              <span class="work__span">
+                - 국내 업체 생산 제품의 해외 홍보 <br />
+                및 판매 업무 컨설팅
+              </span>
+            </p>
+          </section>
+          <section class="work__bottom">
+            <button
+              onmouseover="mOver()"
+              onmouseout="mOut()"
+              class="service__btn"
+              onclick="location.href='html/work.html'"
+              data-logo="sonats"
+            >
+              Sonats
+            </button>
+            <button
+              onmouseover="mOver()"
+              onmouseout="mOut()"
+              class="service__btn"
+              onclick="location.href='html/work.html'"
+              data-logo="thyss"
+            >
+              Thyssenkrupp
+            </button>
+            <button
+              onmouseover="mOver()"
+              onmouseout="mOut()"
+              class="service__btn"
+              onclick="location.href='html/work.html'"
+              data-logo="plasan"
+            >
+              Plasan
+            </button>
+            <button
+              onmouseover="mOver()"
+              onmouseout="mOut()"
+              class="service__btn"
+              onclick="location.href='html/work.html'"
+              data-logo="havelsan"
+            >
+              Havelsan
+            </button>
+          </section>
+        </div>
+      </section>
+      <section id="news" class="scroll">
+        <header class="news__header">
+          <h1 class="header__txt">News</h1>
+        </header>
+        <section class="news__wrap"></section>
+      </section>
+      <section id="contact" class="scroll">
+        <div class="max-width contact__wrap">
+          <header class="contact__header">
+            <h1 class="header__txt">Contact Us</h1>
+          </header>
+          <!-- contact main -->
+          <section class="contact__main">
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.9735060368084!2d127.13254576549441!3d37.53399535872194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caffc6a71042f%3A0x47a090ea3fea8ac5!2z7ISc7Jq47Yq567OE7IucIOqwleuPmeq1rCDshLHrgrTrj5kg7LKc7Zi464yA66GcMTcw6ri4IDI4!5e0!3m2!1sko!2skr!4v1637627827684!5m2!1sko!2skr"
+                width="400"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="contact__info">
+              <section class="address">
+                <h4 class="contact__info__header">주소</h4>
+                <p class="contact__address">
+                  서울시 강동구 천호대로 170길 28, 2층
+                </p>
+              </section>
+              <section class="contact__others">
+                <h4 class="contact__info__header">연락처</h4>
+                <div class="others__group">
+                  <li class="others__li">
+                    <span class="short-1">Tel:</span> 02-477-8898
+                  </li>
+                  <li class="others__li">
+                    <span class="short-2">Fax:</span> 02-477-8897
+                  </li>
+                  <li class="others__li">
+                    <span>E-mail :</span> support@hsinternational.co.kr
+                  </li>
+                  <li class="others__li">
+                    <span class="short-3">담당자:</span> 경영지원팀 허승제 대리
+                  </li>
                 </div>
-                <div class="about__cards">
-                    <h2>조직도</h2>
-                    <button class="layer__card__group">바로가기</button>
-                </div>
-                <div class="about__cards">
-                    <h2>산업분야</h2>
-                    <button class="layer__card__industry">바로가기</button>
-                </div>
+              </section>
             </div>
-        </section>
-        <!-- Work -->
-        <section id="work" class="scroll">
-            <div class="work__wrap max-width">
-                <header class="work__header">
-                    <h1 class="header__txt">Work & Service</h1>
-                </header>
-                <section class="work__top">
-                    <div class="work__logo__wrap">
-                        <div class="work__logos"></div>
-                        <p class="company__introduce"></p>
-                    </div>
-                    <img src="images/work-a.jpg" alt="work photo">
-                    <p class="work__top__p">
-                        <span class="work__title">
-                            Work
-                        </span>
-                        <span class="work__span">
-                            - 해외 업체 생산 제품 판매 및 대여 <br />
-                            - 해외업체의 홍보 마케팅 대행
-                        </span>
-                        <span class="work__span">
-                            - 국내(외) 업체간 에이전트 업무 <br />
-                            - 해외 업체의 한국 대리점 업무 대행
-                        </span>
-                        <span class="work__span">
-                            - 국내 기업 및 연구소에서 의뢰하는 <br />
-                            기술 테스트 연구 용역 대행
-                        </span>
-                        <span class="work__span">
-                            - 국내 업체 생산 제품의 해외 홍보 <br />
-                            및 판매 업무 컨설팅
-                        </span>
-                    </p>
-                </section>
-                <section class="work__bottom">
-                    <button onmouseover="mOver()" onmouseout="mOut()" class="service__btn" data-logo="sonats">Sonats</button>
-                    <button onmouseover="mOver()" onmouseout="mOut()" class="service__btn" data-logo="thyss">Thyssenkrupp</button>
-                    <button onmouseover="mOver()" onmouseout="mOut()" class="service__btn" data-logo="plasan">Plasan</button>
-                    <button onmouseover="mOver()" onmouseout="mOut()" class="service__btn" data-logo="havelsan">Havelsan</button>
-                </section>
-            </div>
-        </section>
-        <section id="news" class="scroll">
-            <header class="news__header">
-                <h1 class="header__txt">News</h1>
-            </header>
-            <section class="news__wrap">
-                
-            </section>
-        </section>
-        <section id="contact" class="scroll">
-            <div class="max-width contact__wrap">
-                <header class="contact__header">
-                    <h1 class="header__txt">Contact Us</h1>
-                </header>
-                <!-- contact main -->
-                <section class="contact__main">
-                    <div class="contact__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.9735060368084!2d127.13254576549441!3d37.53399535872194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caffc6a71042f%3A0x47a090ea3fea8ac5!2z7ISc7Jq47Yq567OE7IucIOqwleuPmeq1rCDshLHrgrTrj5kg7LKc7Zi464yA66GcMTcw6ri4IDI4!5e0!3m2!1sko!2skr!4v1637627827684!5m2!1sko!2skr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    <div class="contact__info">
-                        <section class="address">
-                            <h4 class="contact__info__header">주소</h4>
-                            <p class="contact__address">
-                                서울시 강동구 천호대로 170길 28, 2층
-                            </p>
-                        </section>
-                        <section class="contact__others">
-                            <h4 class="contact__info__header">연락처</h4>
-                            <div class="others__group">
-                                <li class="others__li"><span class="short-1">Tel:</span> 02-477-8898</li>
-                                <li class="others__li"><span class="short-2">Fax:</span> 02-477-8897</li>
-                                <li class="others__li"><span>E-mail :</span> support@hsinternational.co.kr</li>
-                                <li class="others__li"><span class="short-3">담당자:</span> 경영지원팀 허승제 대리</li>
-                            </div>
-                        </section>
-                    </div> 
-                </section>
-            </div>
-        </section>
-        <footer id="footer" class="scroll">
-            <div class="max-width footer__wrap">
-                <p class="copyright">Copyright&copy; 2021 H.S.I Company. All Right Reserved.</p>
-                <h3 class="footer__logo">HSI</h3>
-                <p class="ceo">대표_김영배</p>
-            </div>
-        </footer>
+          </section>
+        </div>
+      </section>
+      <footer id="footer" class="scroll">
+        <div class="max-width footer__wrap">
+          <p class="copyright">
+            Copyright&copy; 2021 H.S.I Company. All Right Reserved.
+          </p>
+          <h3 class="footer__logo">HSI</h3>
+          <p class="ceo">대표_김영배</p>
+        </div>
+      </footer>
     </main>
-    <!-- Pop  -->
-</body>
+  </body>
 </html>

@@ -1,10 +1,11 @@
 "use strict";
 
+
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
-navbarMenu.addEventListener('click', (event)=>{ // 클릭한 이벤트 추가
-    const target = event.target; //target (눌렀을때에 해당 타겟에 이벤트)
-    const link = target.dataset.link; //눌려진 타켓에 링크 값
+navbarMenu.addEventListener('click', (event)=>{ 
+    const target = event.target; 
+    const link = target.dataset.link; 
     if(link == null){
         return;
     }
@@ -35,7 +36,7 @@ navbarToggleBtn.addEventListener('click', () => {
 const workLogos = document.querySelector('.work__logos');
 const workWrap = document.querySelector('.work__logo__wrap');
 const logoBtnWrap = document.querySelector('.work__bottom');
-
+const companyIntroduce = document.querySelector('company__introduce');
 
 function isMobile(){
 	let UserAgent = navigator.userAgent;
