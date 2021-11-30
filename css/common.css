@@ -1,0 +1,242 @@
+/* Variable */
+:root {
+  /* Color */
+  --color-black: #000;
+  --color-blue: #082bbc;
+  --color-dark-blue: #161e54;
+  --color-white: #fff;
+  --color-orange: #ff8a02;
+  --color-grey: #e9e8e8;
+  --color-dark-grey: #a7a6a6;
+  --color-light-blue: #757ec3;
+  --color-light-orange: #f0b46f;
+
+  /* BOX COLOR */
+  --box-color-blue: #0128cb;
+
+  /* Font Size */
+  --font-large: 60px;
+  --font-big: 40px;
+  --font-regular: 35px;
+  --font-normal: 30px;
+  --font-logo-size: 26px;
+  --font-small: 20px;
+  --font-micro: 16px;
+
+  /* Font Family */
+  --font-logo: "Libre Baskerville", serif;
+  --font-kr: "Noto Sans KR", sans-serif;
+  /* Font Weight */
+  --weight-italic: 400;
+  --weight-bold: 700;
+  --weight-regular: 500;
+  --weight-light: 300;
+}
+
+/* Universe */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* Button */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Nav */
+#navbar {
+  /* position */
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* flex */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width */
+  max-width: 1800px;
+  /* margin */
+  margin: auto;
+  z-index: 1000;
+  transition: all 400ms ease-in-out;
+  mix-blend-mode: difference;
+}
+
+.navbar__logo {
+  /* font */
+  font-family: var(--font-logo);
+  font-style: italic;
+  font-size: var(--font-logo-size);
+  /* color */
+  color: var(--color-white);
+  /* margin */
+}
+
+.navbar__contents {
+  font-family: var(--font-kr);
+  font-weight: var(--weight-regular);
+}
+
+.navbar__contents ul {
+  display: flex;
+  gap: 25px;
+}
+
+/* Responsive Toggle */
+.toggle__btn {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar__items a {
+  position: relative;
+  font-size: var(--font-micro);
+  text-transform: capitalize;
+  color: var(--color-white);
+  /* padding */
+  padding: 5px 5px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.navbar__items a::before {
+  content: "";
+  /* Size */
+  width: 0%;
+  height: 1px;
+  /* background Color */
+  background-color: var(--color-orange);
+  /* position */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar__items a:hover {
+  color: var(--color-orange);
+  transition: all 200ms ease-in-out;
+}
+
+.navbar__items a:hover::before {
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+/* main */
+
+/* place */
+.places {
+  font-family: var(--font-kr);
+  color: var(--color-white);
+}
+
+/* Animation */
+@keyframes scrollUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* 738px max */
+@media screen and (max-width: 738px) {
+    /* Nav */
+    #navbar {
+        align-items: center;
+        mix-blend-mode: unset;
+        background-color: var(--color-black);
+        height: 45px;
+    }
+    .navbar__logo {
+        font-size: var(--font-micro);
+        z-index: 1000;
+    }
+    .navbar__menu {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translate(-54%, -800px);
+      /* transition */
+        transition: all 400ms ease-in-out;
+      /* opacity */
+        opacity: 0;
+      /* width */
+        width: 120%;
+      /* height */
+        height: 190px;
+      /* padding */
+        padding-bottom: 20px;
+      /* text */
+        text-align: center;
+      /* flex */
+        flex-direction: column;
+      /* background */
+        background-color: var(--color-black);
+    }
+
+    /* Open navbar menu */
+    .open {
+      /* transform */
+        transform: translate(-54%, 0);
+      /* opacity */
+        opacity: 1;
+      /* transition */
+        transition: all 400ms ease-in-out;
+    }
+  
+    /* toggle*/
+    .toggle__btn {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      z-index: 1000;
+    }
+    /* Times */
+    .times-a {
+      transform: rotate(50deg) translateY(6px);
+    }
+    .times-b {
+      display: none;
+    }
+    .times-c {
+      transform: rotate(-50deg) translateY(-6px);
+    }
+  
+    .hamburger {
+      background-color: var(--color-white);
+      width: 20px;
+      height: 2px;
+      cursor: pointer;
+    }
+}
