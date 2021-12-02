@@ -32,6 +32,7 @@
   z-index: 100;
 }
 
+
 .intro__description {
   font-family: var(--font-kr);
   color: var(--color-grey);
@@ -274,7 +275,7 @@ img {
 @keyframes fade {
   from {
     opacity: 0.4;
-    transform: translateX(40px);
+    transform: translateX(10px);
   }
   to {
     opacity: 1;
@@ -282,11 +283,16 @@ img {
   }
 }
 
+/* Thyss  */
 #thyss{
   position: relative;
-  height: 1000px;
+  height: 2000px;
 }
 
+.thyss__logo{
+  position: relative;
+  left: -15px;
+}
 
 /* Responsive
 ------------------------------------------- */
@@ -358,6 +364,11 @@ img {
     top: 380px;
   }
 
+  .thyss__dot{
+    position: absolute;
+    top: 420px;
+  }
+
 }
 
 
@@ -369,8 +380,16 @@ img {
     width: 77%;
   }
 
+  .thyss__intro{
+    position: relative;
+    top: -10px;
+    font-size: var(--font-regular);
+  }
+  
+
   .thyss__description{
     width: 75%;
+    font-size: var(--font-micro);
   }
   
 }
