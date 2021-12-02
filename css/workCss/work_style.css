@@ -1,12 +1,6 @@
-
-/* Sonats */
-#sonats {
-  position: relative;
-  width: 100%;
-}
-
-.sonats__bg {
-  position: fixed;
+/* Intro */
+.sonats__bg{
+  position: absolute;
   background: url("../../images/sonats-img.png") no-repeat center/cover;
   filter: brightness(30%);
   width: 100%;
@@ -14,7 +8,16 @@
   z-index: 10;
 }
 
-.sonats__info {
+.thyss__bg{
+  background: url("../../images/thyss__bg.jpg") no-repeat center/cover;
+  position: absolute;
+  filter: brightness(30%);
+  width: 100%;
+  height: 1000px;
+  z-index: 60;
+}
+
+.intro__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,28 +26,35 @@
   height: 1000px;
 }
 
-.sonats__title {
+.intro__title {
   font-size: var(--font-large);
   color: var(--color-white);
   z-index: 100;
 }
 
-.sonats__description {
+.intro__description {
   font-family: var(--font-kr);
   color: var(--color-grey);
   font-weight: var(--weight-light);
   font-size: var(--font-small);
   text-align: center;
   line-height: 35px;
-  /* width */
-  width: 53%;
   z-index: 100;
   /* position */
   position: relative;
   top: -20px;
 }
 
-.sonats__scroll {
+.sonats__description{
+  /* width */
+  width: 53%;
+}
+
+.thyss__description{
+  width: 61%;
+}
+
+.intro__scroll {
   font-family: var(--font-kr);
   text-align: center;
   color: var(--color-dark-grey);
@@ -59,7 +69,7 @@
   animation-iteration-count: infinite;
 }
 
-.sonats__scroll__txt {
+.intro__scroll__txt {
   letter-spacing: 15px;
 }
 
@@ -68,6 +78,14 @@
   top: -10px;
   /* font */
   color: var(--color-white);
+}
+
+
+/* Sonats */
+#sonats {
+  position: relative;
+  width: 100%;
+  height: 2000px;
 }
 
 /* Sonats Merchandise */
@@ -264,6 +282,11 @@ img {
   }
 }
 
+#thyss{
+  position: relative;
+  height: 1000px;
+}
+
 
 /* Responsive
 ------------------------------------------- */
@@ -281,6 +304,10 @@ img {
 /* 874px */
 @media screen and (max-width:1095px) {
   /* Sonats Merchandise */
+  #sonats{
+    height: 1950px;
+  }
+
   .sonats__place {
     left: 15px;
     
@@ -303,7 +330,7 @@ img {
 
   .sonats__merchandise {
     top: -50px;
-    height: 1450px;
+
   }
 
   .sonats__LR__wrap {
@@ -336,10 +363,26 @@ img {
 
 /* 738px max */
 @media screen and (max-width: 738px) {
-  /* Main */
-  /* Sonats */
-  .sonats__description {
+  /* Intro */
+  .intro__description {
     text-align: justify;
     width: 77%;
   }
+
+  .thyss__description{
+    width: 75%;
+  }
+  
+}
+
+@media screen and (max-width: 734px) {
+  /* Sonats Merchandise */
+  #sonats{
+    height: 2400px;
+  }
+  .sonats__merchandise {
+    width: 100%;
+    height: 1500px;
+  }
+
 }
