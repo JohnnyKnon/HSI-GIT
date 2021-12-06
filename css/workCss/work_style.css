@@ -380,6 +380,15 @@ img {
     width: 77%;
   }
 
+  /* Left */
+  .sonats__left{
+    position: relative;
+    left: -10px;
+  }
+  .thyss__left{
+    left: -20px;
+  }
+
   .thyss__intro{
     position: relative;
     top: -10px;
