@@ -1,211 +1,4 @@
-/* Intro */
-.sonats__bg{
-  position: absolute;
-  background: url("../../images/sonats-img.png") no-repeat center/cover;
-  filter: brightness(30%);
-  width: 100%;
-  height: 1000px;
-  z-index: 10;
-}
-
-.thyss__bg{
-  background: url("../../images/thyss__bg.jpg") no-repeat center/cover;
-  position: absolute;
-  filter: brightness(30%);
-  width: 100%;
-  height: 1000px;
-  z-index: 60;
-}
-
-.intro__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1000px;
-}
-
-.intro__title {
-  font-size: var(--font-large);
-  color: var(--color-white);
-  z-index: 100;
-}
-
-
-.intro__description {
-  font-family: var(--font-kr);
-  color: var(--color-grey);
-  font-weight: var(--weight-light);
-  font-size: var(--font-small);
-  text-align: center;
-  line-height: 35px;
-  z-index: 100;
-  /* position */
-  position: relative;
-  top: -20px;
-}
-
-.sonats__description{
-  /* width */
-  width: 53%;
-}
-
-.thyss__description{
-  width: 61%;
-}
-
-.intro__scroll {
-  font-family: var(--font-kr);
-  text-align: center;
-  color: var(--color-dark-grey);
-  font-size: var(--font-small);
-  /* position */
-  position: relative;
-  top: 8%;
-  z-index: 100;
-  animation-name: scrollUpDown;
-  animation-duration: 1500ms;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-}
-
-.intro__scroll__txt {
-  letter-spacing: 15px;
-}
-
-.scroll__icon {
-  position: relative;
-  top: -10px;
-  /* font */
-  color: var(--color-white);
-}
-
-
-/* Sonats */
-#sonats {
-  position: relative;
-  width: 100%;
-  height: 2000px;
-}
-
-/* Thyss */
-#thyss{
-  position: relative;
-  height: 2000px;
-}
-
-
-/* Sonats Merchandise */
-.total__merchandise {
-  position: relative;
-  background-color: var(--color-black);
-  width: 100%;
-  height: 1000px;
-  z-index: 100;
-}
-
-.total__LR__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 270px;
-}
-
-.total__left {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 80px;
-  left: 50px;
-}
-
-.total__header {
-  position: relative;
-  top: 120px;
-  left: 50px;
-  /* flex */
-  display: flex;
-  flex-direction: column;
-}
-
-.total__header img {
-  width: 250px;
-}
-
-.total__place {
-  position: relative;
-  left: -5px;
-  top: 5px;
-  width: 200px;
-  font-size: var(--font-small);
-}
-
-.total__list {
-  position: relative;
-  top: 100px;
-  /* text */
-  line-height: 55px;
-}
-
-.total__list__item {
-  font-size: 14px;
-  font-family: var(--font-kr);
-  font-weight: var(--weight-light);
-  color: var(--color-white);
-}
-
-.total__list__item:nth-child(1) {
-  display: block;
-  border-top: 1px solid var(--color-dark-grey);
-}
-
-.work__btns {
-  /* width */
-  width: 245px;
-  height: 50px;
-  /* margin */
-  margin-bottom: 30px;
-  /* border */
-  border: 1px solid var(--color-white);
-  /* font */
-  color: var(--color-white);
-  font-size: var(--font-micro);
-  /* cursor */
-  cursor: pointer;
-  /* Transition */
-  transition: all 300ms ease-out;
-  /* spacing */
-  word-spacing: 5px;
-  /* position */
-  position: relative;
-  top: 120px;
-  left: 35px;
-}
-
-.work__btns:hover,
-.work__btns:focus {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  transition: all 300ms ease-out;
-  font-size: var(--font-small);
-}
-
-/* sonats right */
-.total__right {
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: 215px;
-  width: 600px;
-  height: 600px;
-  background-color: var(--color-white);
-}
-
-.total__right button {
-  color: var(--color-white);
-  font-size: var(--font-regular);
-}
-
+/* Scroll Description */
 .images__items {
   display: block;
 }
@@ -237,10 +30,9 @@ img {
   text-align: center;
 }
 
-
-.dot__wrap{
+.dot__wrap {
   position: absolute;
-  left: 260px; 
+  left: 260px;
   top: 555px;
 }
 
@@ -288,10 +80,34 @@ img {
   }
 }
 
+/* Sonats */
+#sonats {
+  position: relative;
+  width: 100%;
+  height: 2000px;
+}
+
+/* Sonats Description */
+.sonats__description {
+  /* width */
+  width: 53%;
+}
+
+/* Thyss */
+#thyss {
+  position: relative;
+  height: 2000px;
+}
+
 /* Thyss  */
-.thyss__logo{
+.thyss__logo {
   position: relative;
   left: -15px;
+}
+
+/* Thyss Description */
+.thyss__description {
+  width: 61%;
 }
 
 /* Responsive
@@ -300,43 +116,39 @@ img {
 /* 1130px */
 @media screen and (max-width: 1197px) {
   /* Sonats */
-  .total__LR__wrap{
-    gap:150px;
+  .total__LR__wrap {
+    gap: 150px;
   }
-  
 }
 
-
 /* 874px */
-@media screen and (max-width:1095px) {
+@media screen and (max-width: 1095px) {
   /* Sonats Merchandise */
-  #sonats{
+  #sonats {
     height: 1950px;
   }
 
   .total__place {
     left: 15px;
-    
   }
 
   .total__header {
     left: 20px;
   }
-  
+
   .total__header img {
     width: 250px;
   }
-  .total__left{
+  .total__left {
     left: 0;
   }
-  .total__right{
+  .total__right {
     width: 360px;
     height: 350px;
   }
 
   .total__merchandise {
     top: -50px;
-
   }
 
   .total__LR__wrap {
@@ -345,32 +157,29 @@ img {
     align-items: center;
     gap: 60px;
   }
-  
-  img{
+
+  img {
     width: 350px;
   }
 
-  .text{
+  .text {
     bottom: -30px;
   }
 
-  .text-usp{
+  .text-usp {
     top: 330px;
   }
-  
 
-  .dot__wrap{
+  .dot__wrap {
     left: 130px;
     top: 380px;
   }
 
-  .thyss__dot{
+  .thyss__dot {
     position: absolute;
     top: 420px;
   }
-
 }
-
 
 /* 738px max */
 @media screen and (max-width: 738px) {
@@ -381,37 +190,38 @@ img {
   }
 
   /* Left */
-  .total__left{
+  .total__left {
     position: relative;
     left: -10px;
   }
-  .thyss__left{
+  .thyss__left {
     left: -20px;
   }
 
-  .thyss__intro{
+  .thyss__intro {
     position: relative;
     top: -10px;
     font-size: var(--font-regular);
   }
-  
 
-  .thyss__description{
+  .thyss__description {
     width: 75%;
     font-size: var(--font-micro);
   }
-  
 }
 
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 709px) {
   .total__merchandise {
     width: 100%;
     height: 1500px;
   }
-  
+
   /* Sonats */
-  #sonats{
+  #sonats {
     height: 2400px;
   }
 
+  .thyss__logo {
+    left: 5px;
+  }
 }

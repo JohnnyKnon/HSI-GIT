@@ -68,7 +68,9 @@ button {
   margin: auto;
 }
 
-/* Nav */
+/* Nav 
+==============================================*/
+
 #navbar {
   /* position */
   position: fixed;
@@ -147,7 +149,6 @@ button {
   width: 100%;
   transition: all 300ms ease-in-out;
 }
-/* main */
 
 /* place */
 .places {
@@ -155,20 +156,8 @@ button {
   color: var(--color-white);
 }
 
-/* Animation */
-@keyframes scrollUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
+/* Responsive
+===================================================== */
 /* 738px max */
 @media screen and (max-width: 738px) {
     /* Nav */
