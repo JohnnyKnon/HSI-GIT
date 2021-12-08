@@ -1,4 +1,209 @@
+
 /* Scroll Description */
+
+/* Intro */
+.sonats__bg{
+  position: absolute;
+  background: url("../../images/sonats-img.png") no-repeat center/cover;
+  filter: brightness(30%);
+  width: 100%;
+  height: 1000px;
+  z-index: 10;
+}
+
+.thyss__bg{
+  background: url("../../images/thyss__bg.jpg") no-repeat center/cover;
+  position: absolute;
+  filter: brightness(30%);
+  width: 100%;
+  height: 1000px;
+  z-index: 60;
+}
+
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+
+.intro__title {
+  font-size: var(--font-large);
+  color: var(--color-white);
+  z-index: 100;
+}
+
+
+.intro__description {
+  font-family: var(--font-kr);
+  color: var(--color-grey);
+  font-weight: var(--weight-light);
+  font-size: var(--font-small);
+  text-align: center;
+  line-height: 35px;
+  z-index: 100;
+  /* position */
+  position: relative;
+  top: -20px;
+}
+
+.sonats__description{
+  /* width */
+  width: 53%;
+}
+
+.thyss__description{
+  width: 61%;
+}
+
+.intro__scroll {
+  font-family: var(--font-kr);
+  text-align: center;
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  /* position */
+  position: relative;
+  top: 8%;
+  z-index: 100;
+  animation-name: scrollUpDown;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.intro__scroll__txt {
+  letter-spacing: 15px;
+}
+
+.scroll__icon {
+  position: relative;
+  top: -10px;
+  /* font */
+  color: var(--color-white);
+}
+
+
+/* Sonats */
+#sonats {
+  position: relative;
+  width: 100%;
+  height: 2000px;
+}
+
+/* Sonats Merchandise */
+.sonats__merchandise {
+  position: relative;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 1000px;
+  z-index: 100;
+}
+
+.sonats__LR__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 270px;
+}
+
+.sonats__left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 80px;
+  left: 50px;
+}
+
+.sonats__header {
+  position: relative;
+  top: 120px;
+  left: 50px;
+  /* flex */
+  display: flex;
+  flex-direction: column;
+}
+
+.sonats__header img {
+  width: 250px;
+}
+
+.sonats__place {
+  position: relative;
+  left: -5px;
+  top: 5px;
+  width: 200px;
+  font-size: var(--font-small);
+}
+
+.sonats__list {
+  position: relative;
+  top: 100px;
+  /* text */
+  line-height: 55px;
+}
+
+.sonats__list__item {
+  font-size: 14px;
+  font-family: var(--font-kr);
+  font-weight: var(--weight-light);
+  color: var(--color-white);
+}
+
+.sonats__list__item:nth-child(1) {
+  display: block;
+  border-top: 1px solid var(--color-dark-grey);
+}
+
+.work__btns {
+  /* width */
+  width: 245px;
+  height: 50px;
+  /* margin */
+  margin-bottom: 30px;
+  /* border */
+  border: 1px solid var(--color-white);
+  /* font */
+  color: var(--color-white);
+  font-size: var(--font-micro);
+  /* cursor */
+  cursor: pointer;
+  /* Transition */
+  transition: all 300ms ease-out;
+  /* spacing */
+  word-spacing: 5px;
+}
+
+.sonats__btn {
+  position: relative;
+  top: 120px;
+  left: 35px;
+}
+
+.work__btns:hover,
+.work__btns:focus {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: all 300ms ease-out;
+  font-size: var(--font-small);
+}
+
+/* sonats right */
+.sonats__right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 215px;
+  width: 600px;
+  height: 600px;
+  background-color: var(--color-white);
+}
+
+.sonats__right button {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+}
+
 .images__items {
   display: block;
 }
@@ -100,7 +305,14 @@ img {
 }
 
 /* Thyss  */
-.thyss__logo {
+
+#thyss{
+  position: relative;
+  height: 2000px;
+}
+
+.thyss__logo{
+
   position: relative;
   left: -15px;
 }
@@ -116,8 +328,12 @@ img {
 /* 1130px */
 @media screen and (max-width: 1197px) {
   /* Sonats */
+
   .total__LR__wrap {
     gap: 150px;
+  }
+  .sonats__LR__wrap{
+    gap:150px;
   }
 }
 
@@ -128,11 +344,11 @@ img {
     height: 1950px;
   }
 
-  .total__place {
+  .sonats__place {
     left: 15px;
   }
 
-  .total__header {
+  .sonats__header {
     left: 20px;
   }
 
@@ -143,15 +359,24 @@ img {
     left: 0;
   }
   .total__right {
+  }
+  
+  .sonats__header img {
+    width: 250px;
+  }
+  .sonats__left{
+    left: 0;
+  }
+  .sonats__right{
     width: 360px;
     height: 350px;
   }
 
-  .total__merchandise {
+  .sonats__merchandise {
     top: -50px;
   }
 
-  .total__LR__wrap {
+  .sonats__LR__wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +415,10 @@ img {
   }
 
   /* Left */
+
   .total__left {
+  }
+  .sonats__left{
     position: relative;
     left: -10px;
   }
@@ -210,6 +438,7 @@ img {
   }
 }
 
+
 @media screen and (max-width: 709px) {
   .total__merchandise {
     width: 100%;
@@ -218,7 +447,16 @@ img {
 
   /* Sonats */
   #sonats {
+  }
+}
+@media screen and (max-width: 734px) {
+  /* Sonats Merchandises */
+  #sonats{
     height: 2400px;
+  }
+  .sonats__merchandise {
+    width: 100%;
+    height: 1500px;
   }
 
   .thyss__logo {
