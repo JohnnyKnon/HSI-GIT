@@ -155,6 +155,43 @@ button {
   color: var(--color-white);
 }
 
+/* Footer */
+#footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background-color: var(--color-black);
+}
+
+.footer__wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  /* line height */
+  line-height: 10px;
+}
+
+.copyright{
+  font-weight: var(--weight-light);
+  line-height: 20px;
+}
+
+.footer__logo{
+  font-family: var(--font-logo);
+  font-style: italic;
+  font-size: var(--font-regular);
+  color: var(--color-white);
+}
+
+.footer__wrap p{
+  font-family: var(--font-kr);
+  color: var(--color-white);
+}
+
+
 /* Responsive
 ===================================================== */
 /* 738px max */

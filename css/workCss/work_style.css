@@ -428,7 +428,7 @@ img {
     height: 1950px;
   }
    /* Havalsan */
-   #havalsan{
+  #havalsan{
     top: -100px;
   }
 }
@@ -498,6 +498,11 @@ img {
   /* Havalsan */
   #havalsan{
     top: 350px;
+  }
+
+  /* Footer */
+  #footer{
+    top: 280px;
   }
 }
 
