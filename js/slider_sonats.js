@@ -7,8 +7,8 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName("mySlides-sonats");
+  var dots = document.getElementsByClassName("dot-sonats");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -19,5 +19,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
