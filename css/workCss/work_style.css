@@ -1,9 +1,11 @@
-/* Scroll Description */
+body {
+  background-color: var(--color-black);
+}
 
 /* Intro */
 .background__image{
   position: absolute;
-  filter: brightness(30%);
+  filter: brightness(20%);
   width: 100%;
   height: 1000px;
   z-index: 60;
@@ -19,6 +21,10 @@
 
 .plasan__bg{
   background: url("../../images/Plasan_BG.jpg") no-repeat center/cover;
+}
+
+.havalsan__bg{
+  background: url("../../images/havalsan_BG.png") no-repeat center/cover;
 }
 
 .intro__info {
@@ -220,7 +226,7 @@
   display: none;
 }
 /* Plasan Slide*/
-.mySlides-plasan{
+.mySlides-single{
   display: block;
 }
 
@@ -336,6 +342,12 @@ img {
   top: 160px;
 }
 
+/* Havalsan */
+#havalsan{
+  position: relative;
+  height: 2000px;
+}
+
 /* Responsive
 ------------------------------------------- */
 /* 1130px */
@@ -350,6 +362,11 @@ img {
 
   /* Plasan */
   #plasan{
+    top: -50px;
+  }
+
+  /* Havalsan */
+  #havalsan{
     top: -50px;
   }
 }
@@ -410,7 +427,10 @@ img {
   #sonats {
     height: 1950px;
   }
-  
+   /* Havalsan */
+   #havalsan{
+    top: -100px;
+  }
 }
 
 /* 738px max */
@@ -442,7 +462,17 @@ img {
     font-size: var(--font-micro);
   }
 }
-
+/*  735 */
+@media screen and (max-width: 735px) {
+  /* Plasan */
+  .plasan__merchandise{
+    height: 1300px;
+  }
+  /* Havalsan */
+  #havalsan{
+    top: 150px;
+  }
+}
 /*  734 */
 @media screen and (max-width: 734px) {
   /* Total */
@@ -465,6 +495,10 @@ img {
     position: relative;
     top: 350px;
   }
+  /* Havalsan */
+  #havalsan{
+    top: 350px;
+  }
 }
 
 /* 709 */
@@ -483,5 +517,15 @@ img {
   /* Plasan */
   #plasan{
     top: 440px;
+  }
+  /* Havalsan */
+  #havalsan{
+    top: 900px;
+  }
+  .havalsan__LR{
+    flex-direction: column;
+  }
+  .havalsan__left{
+    left: -35px;
   }
 }
