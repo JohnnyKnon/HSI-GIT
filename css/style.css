@@ -471,6 +471,17 @@
 
 /* Responsive
 _____________________________________________________________ */
+@media screen and (max-width: 1519px) {
+  .contact__main{
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .contact__info{
+    gap: 10px;
+  }
+}
+
+
 /* 1359px max */
 @media  screen and (max-width: 1379px) {
   /* Contact Us */
