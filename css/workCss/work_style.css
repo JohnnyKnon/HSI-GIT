@@ -3,7 +3,7 @@ body {
 }
 
 /* Intro */
-.background__image{
+.background__image {
   position: absolute;
   filter: brightness(20%);
   width: 100%;
@@ -19,11 +19,11 @@ body {
   background: url("../../images/thyss__bg.jpg") no-repeat center/cover;
 }
 
-.plasan__bg{
+.plasan__bg {
   background: url("../../images/Plasan_BG.jpg") no-repeat center/cover;
 }
 
-.havalsan__bg{
+.havalsan__bg {
   background: url("../../images/havalsan_BG.png") no-repeat center/cover;
 }
 
@@ -226,7 +226,7 @@ body {
   display: none;
 }
 /* Plasan Slide*/
-.mySlides-single{
+.mySlides-single {
   display: block;
 }
 
@@ -332,18 +332,18 @@ img {
 }
 
 /* Plasan */
-#plasan{
+#plasan {
   position: relative;
   height: 2000px;
 }
 
-.plasan__left{
+.plasan__left {
   position: relative;
   top: 160px;
 }
 
 /* Havalsan */
-#havalsan{
+#havalsan {
   position: relative;
   height: 2000px;
 }
@@ -361,12 +361,12 @@ img {
   }
 
   /* Plasan */
-  #plasan{
+  #plasan {
     top: -50px;
   }
 
   /* Havalsan */
-  #havalsan{
+  #havalsan {
     top: -50px;
   }
 }
@@ -427,8 +427,8 @@ img {
   #sonats {
     height: 1950px;
   }
-   /* Havalsan */
-  #havalsan{
+  /* Havalsan */
+  #havalsan {
     top: -100px;
   }
 }
@@ -465,11 +465,11 @@ img {
 /*  735 */
 @media screen and (max-width: 735px) {
   /* Plasan */
-  .plasan__merchandise{
+  .plasan__merchandise {
     height: 1300px;
   }
   /* Havalsan */
-  #havalsan{
+  #havalsan {
     top: 150px;
   }
 }
@@ -480,7 +480,7 @@ img {
   #sonats {
     height: 2400px;
   }
-  .merchandise{
+  .merchandise {
     height: 1450px;
   }
   /* Thyss Logo */
@@ -488,21 +488,22 @@ img {
     left: 5px;
   }
   /* Plasan */
-  .plasan__merchandise{
+  .plasan__merchandise {
     height: 1300px;
   }
-  .plasan__right{
+  .plasan__right {
     position: relative;
     top: 350px;
   }
   /* Havalsan */
-  #havalsan{
+  #havalsan {
     top: 350px;
   }
 
   /* Footer */
-  #footer{
-    top: 280px;
+  #footer {
+    top: 1250px;
+    z-index: 100;
   }
 }
 
@@ -520,17 +521,17 @@ img {
   }
 
   /* Plasan */
-  #plasan{
+  #plasan {
     top: 440px;
   }
   /* Havalsan */
-  #havalsan{
+  #havalsan {
     top: 900px;
   }
-  .havalsan__LR{
+  .havalsan__LR {
     flex-direction: column;
   }
-  .havalsan__left{
+  .havalsan__left {
     left: -35px;
   }
 }

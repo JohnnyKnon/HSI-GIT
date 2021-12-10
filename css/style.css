@@ -1,42 +1,40 @@
+/* Body */
+body {
+  background-color: var(--color-white);
+}
 /* header Text */
-.header__txt{
+.header__txt {
   font-family: var(--font-kr);
   font-size: var(--font-big);
   font-weight: var(--weight-bold);
 }
 
 /* Main */
-#main{
+#main {
   /* position */
   position: relative;
   /* size */
   height: 100vh;
   /* background color */
   background-color: var(--color-white);
-  /* overflow */
-  overflow-y: auto;
-  /* Scroll snap */
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   /* margin */
   margin: auto;
 }
 
-.scroll{
+.scroll {
   width: 100%;
   height: 1000px;
-  scroll-snap-align: start;
 }
 
 /* Home */
-#home{
+#home {
   display: flex;
   justify-content: center;
   /* position */
   position: relative;
 }
 
-.home__img{
+.home__img {
   position: absolute;
   /* BG */
   background: url("../images/HSIBG.jpg") no-repeat center/cover;
@@ -47,7 +45,7 @@
   height: 1000px;
   z-index: 10;
 }
-.home__main__txt__wrap{
+.home__main__txt__wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,18 +55,18 @@
   font-family: var(--font-kr);
   z-index: 10;
 }
-.home__main__txt__wrap h1{
+.home__main__txt__wrap h1 {
   color: var(--color-white);
   font-size: var(--font-big);
 }
 
-.home__main__p{
+.home__main__p {
   color: var(--color-white);
   font-size: var(--font-micro);
   word-spacing: 5px;
 }
 
-.home__pdf__btn{
+.home__pdf__btn {
   /* position */
   position: relative;
   /* font */
@@ -86,7 +84,8 @@
   transition: all 300ms ease-in-out;
 }
 
-.home__pdf__btn::after, .home__pdf__btn::before{
+.home__pdf__btn::after,
+.home__pdf__btn::before {
   content: "";
   /* position */
   position: absolute;
@@ -98,33 +97,34 @@
   background-color: var(--color-white);
   transition: all 300ms ease-in-out;
 }
-.home__pdf__btn::after{
+.home__pdf__btn::after {
   left: -20px;
 }
-.home__pdf__btn::before{
+.home__pdf__btn::before {
   right: -20px;
 }
 
-.home__pdf__btn:hover{
+.home__pdf__btn:hover {
   background-color: var(--color-white);
   color: var(--color-black);
   transition: all 300ms ease-in-out;
 }
 
-.home__pdf__btn:hover::after, .home__pdf__btn:hover::before{
+.home__pdf__btn:hover::after,
+.home__pdf__btn:hover::before {
   background-color: var(--color-grey);
   transition: all 300ms ease-in-out;
 }
 
 /* About */
-#about{
+#about {
   position: relative;
   max-width: 1200px;
   /* margin */
   margin: auto;
 }
 
-.about__header{
+.about__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,7 +133,7 @@
   top: 90px;
 }
 
-.about__header p{
+.about__header p {
   position: relative;
   top: -35px;
   /* font */
@@ -142,7 +142,7 @@
   word-spacing: 3px;
 }
 
-.about__card__container{
+.about__card__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -154,11 +154,11 @@
   top: 130px;
 }
 
-.about__cards{
+.about__cards {
   width: 350px;
   height: 500px;
   /* border radius */
-  border-radius: 14px; 
+  border-radius: 14px;
   /* flex */
   display: flex;
   flex-direction: column;
@@ -167,7 +167,8 @@
   gap: 50px;
 }
 
-.about__cards h2{
+.about__cards h2 {
+  font-family: var(--font-kr);
   color: var(--color-white);
   mix-blend-mode: difference;
   font-size: var(--font-regular);
@@ -175,7 +176,7 @@
   transition: all 400ms ease-in-out;
 }
 
-.about__cards button{
+.about__cards button {
   /* padding */
   padding: 10px 30px;
   border: 1px solid var(--color-white);
@@ -189,62 +190,64 @@
   transform: translateY(100px);
   transition: all 400ms ease-in-out;
 }
-.about__cards button:hover, .about__cards button:focus{
+.about__cards button:hover,
+.about__cards button:focus {
   background-color: var(--color-white);
   color: var(--color-black);
 }
 
-.about__cards:nth-child(1){
+.about__cards:nth-child(1) {
   /* Img */
-  background: url("../images/introCard.jpg") no-repeat -100px/cover;
+  background: url("../images/introCard.jpg") no-repeat -100px / cover;
 }
 
-.about__cards:nth-child(2){
-  background: url("../images/groupCard.jpg") no-repeat -40px/cover;
+.about__cards:nth-child(2) {
+  background: url("../images/groupCard.jpg") no-repeat -40px / cover;
 }
 
-.about__cards:nth-child(3){
-  background: url("../images/businessCard.jpg") no-repeat -100px/cover;
+.about__cards:nth-child(3) {
+  background: url("../images/businessCard.jpg") no-repeat -100px / cover;
 }
 
-.about__cards:hover, .about__cards:focus{
+.about__cards:hover,
+.about__cards:focus {
   background-color: var(--color-orange);
   background-image: unset;
 }
 
-.about__cards:hover h2{
+.about__cards:hover h2 {
   mix-blend-mode: unset;
   color: var(--color-white);
   transform: translateY(0);
   transition: all 400ms ease-in-out;
 }
 
-.about__cards:hover button{
+.about__cards:hover button {
   opacity: 1;
   transform: translateY(0);
   transition: all 400ms ease-in-out;
 }
 
 /* Work */
-#work{
+#work {
   position: relative;
   background-color: var(--color-grey);
 }
 
-.work__wrap{
+.work__wrap {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin: auto;
 }
 
-.work__header{
+.work__header {
   position: relative;
   top: 90px;
   text-align: center;
 }
 
-.work__top{
+.work__top {
   position: relative;
   display: flex;
   justify-content: center;
@@ -253,7 +256,7 @@
   margin-top: 120px;
 }
 
-.work__logo__wrap{
+.work__logo__wrap {
   position: absolute;
   top: -20px;
   /* flex */
@@ -274,38 +277,39 @@
   z-index: 100;
 }
 
-.logo__wrap--visible{
+.logo__wrap--visible {
   visibility: visible;
   opacity: 1;
   transition: all 300ms 10ms ease-in-out;
 }
 
-.sonats{
+.sonats {
   width: 215px;
   height: 90px;
-  background: url("../images/SONATS-couleur-2.png")no-repeat center/cover;
-
+  background: url("../images/SONATS-couleur-2.png") no-repeat center/cover;
 }
 
-.thyss{
+.thyss {
   width: 230px;
   height: 200px;
-  background: url("../images/Thyssenkrupp_logo_logotype-700x482.png")no-repeat center/cover;
+  background: url("../images/Thyssenkrupp_logo_logotype-700x482.png") no-repeat
+    center/cover;
 }
 
-.plasan{
+.plasan {
   width: 300px;
   height: 100px;
-  background: url("../images/Logo-Plasan-300x99.jpg")no-repeat center/cover;
+  background: url("../images/Logo-Plasan-300x99.jpg") no-repeat center/cover;
 }
 
-.havelsan{
+.havelsan {
   width: 215px;
   height: 100px;
-  background: url("../images/Havelsan-750x375\ \(1\).png")no-repeat center/cover;
+  background: url("../images/Havelsan-750x375\ \(1\).png") no-repeat
+    center/cover;
 }
 
-.company__introduce{
+.company__introduce {
   width: 570px;
   text-align: center;
   font-family: var(--font-kr);
@@ -314,26 +318,25 @@
   line-height: 34px;
 }
 
-
-.work__top img{
+.work__top img {
   width: 450px;
-  -webkit-box-shadow: 5px 5px 7px -1px #262626; 
+  -webkit-box-shadow: 5px 5px 7px -1px #262626;
   box-shadow: 5px 5px 7px -1px #262626;
 }
-.work__top__p{
+.work__top__p {
   /* outside */
   position: relative;
   background-color: var(--color-white);
   width: 350px;
   height: 270px;
   border-radius: 10px;
-/* inside */
+  /* inside */
   display: flex;
   flex-direction: column;
-  gap: 2px; 
+  gap: 2px;
 }
 
-.work__title{
+.work__title {
   position: absolute;
   top: -60px;
   font-family: var(--font-kr);
@@ -343,7 +346,7 @@
   margin-top: 14px;
 }
 
-.work__span{
+.work__span {
   /* move */
   margin-top: 14px;
   margin-left: 30px;
@@ -353,7 +356,7 @@
   color: var(--color-dark-blue);
 }
 
-.work__bottom{
+.work__bottom {
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -361,7 +364,7 @@
   gap: 30px;
 }
 
-.service__btn{
+.service__btn {
   width: 239px;
   height: 239px;
   border-radius: 50%;
@@ -374,7 +377,8 @@
   transition: all 300ms ease-in-out;
 }
 
-.service__btn:hover, .service__btn:focus{
+.service__btn:hover,
+.service__btn:focus {
   background-color: var(--color-white);
   border: 10px solid var(--color-dark-blue);
   color: var(--color-black);
@@ -382,18 +386,18 @@
 }
 
 /* News */
-#news{
+#news {
   max-width: 1200px;
   margin: auto;
 }
 
-.news__header{
+.news__header {
   position: relative;
   top: 100px;
   text-align: center;
 }
 
-.news__wrap{
+.news__wrap {
   margin: auto;
   /* flex */
   display: flex;
@@ -403,23 +407,23 @@
 }
 
 /* Contact Us */
-#contact{
+#contact {
   position: relative;
   background-color: var(--color-grey);
   height: 1000px;
 }
 
-.contact__wrap{
+.contact__wrap {
   margin: auto;
 }
 
-.contact__header{
+.contact__header {
   position: relative;
   top: 80px;
   text-align: center;
 }
 
-.contact__main{
+.contact__main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -434,11 +438,11 @@
   font-family: var(--font-kr);
 }
 
-.address{
+.address {
   line-height: 5px;
 }
 
-.contact__info{
+.contact__info {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -446,165 +450,157 @@
   top: -20px;
 }
 
-.contact__info__header{
+.contact__info__header {
   /* font */
   font-weight: var(--weight-bold);
   font-size: var(--font-logo-size);
   color: var(--color-dark-blue);
 }
 
-.contact__others{
+.contact__others {
   line-height: 1px;
 }
 
-.others__group{
+.others__group {
   line-height: 35px;
 }
 
-.others__li span{
+.others__li span {
   font-weight: var(--weight-bold);
 }
 
-.short-3{
+.short-3 {
   letter-spacing: 3.5px;
 }
 
 /* Responsive
 _____________________________________________________________ */
 @media screen and (max-width: 1519px) {
-  .contact__main{
+  .contact__main {
     margin-top: 50px;
     justify-content: center;
   }
-  .contact__info{
+  .contact__info {
     gap: 10px;
   }
 }
 
-
 /* 1359px max */
-@media  screen and (max-width: 1379px) {
+@media screen and (max-width: 1379px) {
   /* Contact Us */
-  .contact__main{
+  .contact__main {
     display: flex;
     justify-content: center;
     margin-top: 80px;
   }
 }
 
-
 /* 1110px max */
-@media  screen and (max-width: 1110px) {
+@media screen and (max-width: 1110px) {
   /* main */
-  #main{
+  #main {
     scroll-snap-type: none;
   }
 
-  .about__pop__box{
+  .about__pop__box {
     height: 1200px;
   }
-
-
 }
 
 /* 1060px max */
-@media  screen and (max-width: 1060px) {
-  #work{
+@media screen and (max-width: 1060px) {
+  #work {
     height: 1200px;
   }
 }
 /* 1062px */
-@media screen and (max-width:1062px) and (min-width:794px){
-  .work__bottom{
+@media screen and (max-width: 1062px) and (min-width: 794px) {
+  .work__bottom {
     max-width: 600px;
     margin: auto;
     margin-top: 80px;
   }
 }
 
-
 /* 817px */
-@media screen and (max-width: 818px){
+@media screen and (max-width: 818px) {
   /* work */
-  #work{
+  #work {
     height: 1500px;
   }
-  
 }
 
 /* 738px max */
-@media screen and (max-width:738px) {
-
+@media screen and (max-width: 738px) {
   /* home */
-  .home__main__txt__wrap h1{
+  .home__main__txt__wrap h1 {
     width: 340px;
     text-align: center;
   }
-  
-  .home__main__p{
+
+  .home__main__p {
     color: var(--color-grey);
     width: 240px;
     text-align: center;
   }
-  
-  .reponsive__span{
+
+  .reponsive__span {
     font-family: var(--font-logo);
     font-style: italic;
   }
 
   /* about */
-  .about__cards{
+  .about__cards {
     width: 350px;
     height: 300px;
     gap: 0;
   }
 
-  .about__cards:nth-child(1){
+  .about__cards:nth-child(1) {
     /* Img */
     background-position: center;
   }
 
-  #work{
+  #work {
     margin-top: 400px;
   }
-  
 }
 
 /* max1110px ~ min 737px */
-@media screen and (max-width: 1110px) and (min-width: 737px){
+@media screen and (max-width: 1110px) and (min-width: 737px) {
   /* about */
-  .about__card__container{
+  .about__card__container {
     top: 100px;
   }
 
-  .about__cards{
+  .about__cards {
     width: 350px;
     height: 400px;
   }
-  .about__cards:nth-child(3){
+  .about__cards:nth-child(3) {
     width: 720px;
     height: 300px;
     background-position: center;
   }
   /* work */
-  #work{
+  #work {
     margin-top: 150px;
   }
 }
 
-@media screen and (max-width: 526px){
-  #work{
+@media screen and (max-width: 526px) {
+  #work {
     height: 2100px;
   }
 
-  .map{
+  .map {
     width: 300px;
     height: 300px;
   }
 }
 
-@media screen and (max-width: 420px){
-  .work__top img{
+@media screen and (max-width: 420px) {
+  .work__top img {
     width: 340px;
   }
 }
