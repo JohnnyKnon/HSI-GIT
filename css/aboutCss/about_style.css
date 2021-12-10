@@ -50,13 +50,11 @@ body {
 }
 
 /* Introduce Main Title */
-.introduce__main__title {
+.introduce__main__title > h3 {
   /* Font */
   font-family: var(--font-kr);
   font-size: 25px;
   color: var(--color-dark-blue);
-  /* width */
-  width: 730px;
 }
 
 /* Introduce bottom */
@@ -67,7 +65,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 28px;
 }
 
 /* Introduce Image */
@@ -79,10 +77,14 @@ body {
   height: 500px;
   /* border radius */
   border-radius: 10px;
+  /* Box shadow */
+  -webkit-box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.96);
+  box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.96);
 }
 
 /* Introduce Main First */
-.introduce__main__first {
+.introduce__main__first,
+.introduce__main__second {
   /* width */
   width: 730px;
   /* Font */
@@ -106,21 +108,6 @@ body {
   color: var(--color-blue);
 }
 
-/* Introduce Main Second */
-.introduce__main__second {
-  /* width */
-  width: 730px;
-  /* Font */
-  font-family: var(--font-kr);
-  font-size: var(--font-small);
-  font-weight: var(--weight-regular);
-  /* Text */
-  text-align: justify;
-  text-indent: 15px;
-  word-spacing: 5px;
-  line-height: 35px;
-}
-
 /* Introduce Space word */
 .introduce__space__word > h1 {
   /* Font */
@@ -128,4 +115,70 @@ body {
   font-style: italic;
   font-size: 100px;
   color: var(--color-grey);
+}
+
+/* Responsive */
+
+/* max-width 1257px */
+@media screen and (max-width: 1257px) {
+  /* Main */
+  #main > section {
+    height: 100rem;
+  }
+  /* Introduce */
+  /* Introduce Bottom */
+  /* Introduce Image */
+  .introduce__image {
+    /* Image size */
+    width: 730px;
+    height: 300px;
+    /* Box shadow */
+    -webkit-box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.96);
+    box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.96);
+  }
+}
+
+/* Max-width 768px */
+@media screen and (max-width: 768px) {
+  /* Introduce */
+  /* Introduce Main First / Second */
+  .introduce__main__first,
+  .introduce__main__second {
+    width: 630px;
+  }
+}
+
+/* Max-width 738px */
+@media screen and (max-width: 738px) {
+  /* Introduce */
+  /* Introduce Top */
+  .introduce__header {
+    font-size: var(--font-small);
+  }
+  /* Introduce Main Title */
+  .introduce__main__title > h3 {
+    /* Font */
+    font-size: 19px;
+    text-align: center;
+  }
+  /* Introduce Bottom */
+  .introduce__bottom {
+    flex-direction: column;
+  }
+  /* Introduce Image */
+  .introduce__image {
+    /* Image size */
+    width: 320px;
+    height: 220px;
+  }
+  /* Introduce Main First / Second */
+  .introduce__main__first,
+  .introduce__main__second {
+    /* width */
+    width: 320px;
+    /* Font */
+    font-size: var(--font-micro);
+    word-spacing: 2px;
+    line-height: 30px;
+  }
 }
