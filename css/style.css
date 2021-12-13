@@ -390,9 +390,13 @@ body {
 /* News */
 #news {
   max-width: 1200px;
-  margin: auto;
+  /* margin */
+  margin: -66px auto;
   /* bg color */
   background-color: var(--color-white);
+  /* Position */
+  position: relative;
+  bottom: -33px;
 }
 
 .news__header {
@@ -414,7 +418,6 @@ body {
 #contact {
   position: relative;
   background-color: var(--color-grey);
-  height: 1000px;
 }
 
 .contact__wrap {
@@ -476,6 +479,8 @@ body {
 .short-3 {
   letter-spacing: 3.5px;
 }
+
+
 
 /* Responsive
 _____________________________________________________________ */
