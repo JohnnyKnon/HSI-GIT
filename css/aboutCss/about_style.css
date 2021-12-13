@@ -3,15 +3,9 @@ body {
   background-color: var(--color-white);
 }
 
-/* Mix blend mode Background Color */
-.mix__bg__color{
-  background-color: var(--color-white);
-}
-
 /* Main */
 #main > section {
   height: 83rem;
-  border: 1px solid black;
   margin: auto;
 }
 
@@ -95,12 +89,12 @@ body {
   width: 730px;
   /* Font */
   font-family: var(--font-kr);
-  font-size: var(--font-small);
+  font-size: var(--font-micro);
   font-weight: var(--weight-regular);
   /* Text */
   text-align: justify;
   text-indent: 15px;
-  word-spacing: 5px;
+  word-spacing: 4.2px;
   line-height: 35px;
 }
 .introduce__main__first__span {
@@ -126,7 +120,7 @@ body {
 /* Responsive */
 
 /* max-width 1257px */
-@media screen and (max-width: 1257px) {
+@media screen and (max-width: 1276px) {
   /* Main */
   #main > section {
     height: 100rem;

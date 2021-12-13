@@ -21,7 +21,7 @@ body {
   margin: auto;
 }
 
-.scroll {
+.section__size {
   width: 100%;
   height: 1000px;
 }
@@ -120,6 +120,8 @@ body {
 #about {
   position: relative;
   max-width: 1200px;
+  /* bg color */
+  background-color: var(--color-white);
   /* margin */
   margin: auto;
 }
@@ -389,6 +391,8 @@ body {
 #news {
   max-width: 1200px;
   margin: auto;
+  /* bg color */
+  background-color: var(--color-white);
 }
 
 .news__header {

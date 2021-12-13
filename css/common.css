@@ -44,6 +44,11 @@ body {
   padding: 0;
 }
 
+/* Mix blend mode Background Color */
+.mix__bg__color{
+  background-color: var(--color-white);
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
