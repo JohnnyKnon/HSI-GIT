@@ -275,6 +275,10 @@ img {
   background-color: var(--color-orange);
 }
 
+.active-thyss {
+  background-color: var(--color-orange);
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -313,6 +317,11 @@ img {
   position: relative;
   width: 100%;
   height: 2000px;
+}
+
+.text-usp{
+  position: relative;
+  top: -12px;
 }
 
 /* Thyss */
