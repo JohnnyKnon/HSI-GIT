@@ -23,8 +23,8 @@ body {
   background: url("../../images/Plasan_BG.jpg") no-repeat center/cover;
 }
 
-.havalsan__bg {
-  background: url("../../images/havalsan_BG.png") no-repeat center/cover;
+.havelsan__bg {
+  background: url("../../images/havelsan_BG.png") no-repeat center/cover;
 }
 
 .intro__info {
@@ -310,7 +310,7 @@ img {
   }
 }
 
-/* Sonats / Thyss / Plasan / Havalsan */
+/* Sonats / Thyss / Plasan / Havelsan */
 
 /* Sonats */
 #sonats {
@@ -351,11 +351,12 @@ img {
   top: 160px;
 }
 
-/* Havalsan */
-#havalsan {
+/* Havelsan */
+#havelsan {
   position: relative;
   height: 2000px;
 }
+
 
 /* Responsive
 ------------------------------------------- */
@@ -374,8 +375,8 @@ img {
     top: -50px;
   }
 
-  /* Havalsan */
-  #havalsan {
+  /* Havelsan */
+  #havelsan {
     top: -50px;
   }
 }
@@ -417,9 +418,13 @@ img {
   .text {
     bottom: -30px;
   }
+  /* Plasan merchandise */
+  .text-plasan{
+    bottom: -10px
+  }
 
   .text-usp {
-    top: 330px;
+    top: -22px;
   }
 
   .dot__wrap {
@@ -436,8 +441,15 @@ img {
   #sonats {
     height: 1950px;
   }
-  /* Havalsan */
-  #havalsan {
+
+  /* Thyss */
+  .mySlides-thyss:nth-child(1) img{
+    position: relative;
+    left: 3px;
+  }
+
+  /* Havelsan */
+  #havelsan {
     top: -100px;
   }
 }
@@ -454,6 +466,10 @@ img {
   .sonats__left {
     position: relative;
     left: -10px;
+  }
+  /* Sonats */
+  .sonats__title{
+    font-size: 40px;
   }
 
   /* Thyss Icon */
@@ -477,8 +493,8 @@ img {
   .plasan__merchandise {
     height: 1300px;
   }
-  /* Havalsan */
-  #havalsan {
+  /* Havelsan */
+  #havelsan {
     top: 150px;
   }
 }
@@ -504,8 +520,8 @@ img {
     position: relative;
     top: 350px;
   }
-  /* Havalsan */
-  #havalsan {
+  /* Havelsan */
+  #havelsan {
     top: 350px;
   }
 
@@ -533,14 +549,14 @@ img {
   #plasan {
     top: 440px;
   }
-  /* Havalsan */
-  #havalsan {
+  /* Havelsan */
+  #havelsan {
     top: 900px;
   }
-  .havalsan__LR {
+  .havelsan__LR {
     flex-direction: column;
   }
-  .havalsan__left {
+  .havelsan__left {
     left: -35px;
   }
 }

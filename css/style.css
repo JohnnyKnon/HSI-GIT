@@ -392,6 +392,7 @@ body {
   max-width: 1200px;
   /* margin */
   margin: -66px auto;
+  height: 1100px;
   /* bg color */
   background-color: var(--color-white);
   /* Position */
@@ -500,7 +501,7 @@ _____________________________________________________________ */
   .contact__main {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 46px;
   }
 }
 

@@ -223,8 +223,9 @@ button {
     /* width */
     width: 120%;
     /* height */
-    height: 240px;
+    height: 285px;
     /* padding */
+    padding-top: 30px;
     padding-bottom: 20px;
     /* text */
     text-align: center;
@@ -235,7 +236,11 @@ button {
   }
   /* Work part menu height */
   .navbar__menu-work {
-    height: 200px;
+    height: 235px;
+  }
+  /* About part menu height */
+  .navbar__menu-about{
+    height: 190px;
   }
 
   /* Open navbar menu */
