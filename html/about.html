@@ -7,6 +7,7 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../css/aboutCss/about_style.css" />
     <link rel="stylesheet" href="../css/aboutCss/group_device_style.css" />
+    <link rel="stylesheet" href="../css/aboutCss/industry_device_style.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <!-- Google Fonts -->
     <link
@@ -117,7 +118,11 @@
             <header class="industry__header">
               <h1>산업분야</h1>
             </header>
-            <article class="industry__main">
+            <article
+              class="industry__main"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <!-- One -->
               <section class="industry__img">
                 <article class="industry__content">
@@ -144,6 +149,27 @@
                 </article>
               </section>
             </article>
+            <article class="industry__main-mobile">
+              <button class="industry__mobile__icon__btn">
+                <i class="fas fa-mouse"></i><br />Click
+              </button>
+              <img
+                src="../images/ICON.png"
+                alt="산업분류 아이콘 항공, 방산, 철도, 전자, 플랜트, 커머셜, 자동차"
+                class="industry__mobile__icon__img"
+              />
+              <div class="industry__mobile__icon__wrap">
+                <ul>
+                  <li class="industry__icons__txt">항공</li>
+                  <li class="industry__icons__txt">철도</li>
+                  <li class="industry__icons__txt">자동차</li>
+                  <li class="industry__icons__txt">전자</li>
+                  <li class="industry__icons__txt">플랜트</li>
+                  <li class="industry__icons__txt">방산</li>
+                  <li class="industry__icons__txt">커머스</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </section>
         <!-- Footer -->
@@ -161,6 +187,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // About Industry part Event
+      const industryClickBtn = document.querySelector(
+        ".industry__mobile__icon__btn"
+      );
+      const industryIconImage = document.querySelector(
+        ".industry__mobile__icon__img"
+      );
+      const industryMobileIconTxt = document.querySelector(
+        ".industry__mobile__icon__wrap"
+      );
+
+      industryClickBtn.addEventListener("click", () => {
+        industryIconImage.classList.add("industry__icon-active");
+        industryClickBtn.classList.add("button-active");
+        industryMobileIconTxt.classList.add("mobile__icon__txt-active");
+      });
     </script>
   </body>
 </html>
