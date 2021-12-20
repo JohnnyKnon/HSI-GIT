@@ -614,3 +614,12 @@ _____________________________________________________________ */
     width: 340px;
   }
 }
+
+@media screen and (max-width: 411px) {
+  #home{
+    height: 850px;
+  }
+  .home__img{
+    height: 850px;
+  }
+}

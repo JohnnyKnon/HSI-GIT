@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../css/aboutCss/about_style.css" />
+    <link rel="stylesheet" href="../css/aboutCss/group_device_style.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <!-- Google Fonts -->
     <link
@@ -21,6 +22,9 @@
     />
     <!-- JS Link -->
     <script src="../js/main.js" defer></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>H.S.I | About</title>
   </head>
   <body>
@@ -58,7 +62,11 @@
             </h3>
           </article>
           <!-- Introduce Bottom -->
-          <section class="introduce__bottom">
+          <section
+            class="introduce__bottom"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <article class="introduce__image"></article>
             <article class="introduce__main">
               <p class="introduce__main__first">
@@ -94,12 +102,50 @@
           <header class="about__total__title">
             <h1>조직도</h1>
           </header>
-          <article class="group__img">
-            <img src="../images/Group-modify.png" alt="조직도">
+          <article
+            class="group__img"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+          >
+            <img src="../images/group-map-pc-modify.png" alt="조직도" />
+            <h3>Group map</h3>
           </article>
         </section>
         <!-- Industry -->
-        <section id="industry"></section>
+        <section id="industry">
+          <div class="max-width industry__wrap">
+            <header class="industry__header">
+              <h1>산업분야</h1>
+            </header>
+            <article class="industry__main">
+              <!-- One -->
+              <section class="industry__img">
+                <article class="industry__content">
+                  <h2>One</h2>
+                  <p>철도, 항공, 자동차</p>
+                </article>
+              </section>
+              <!-- Two -->
+              <section class="industry__img">
+                <article class="industry__content">
+                  <h2>Two</h2>
+                  <p>방위산업</p>
+                </article>
+                <span class="industry__info__touch">
+                  <i class="fas fa-mouse"></i>
+                  <h3>마우스를 올려주세요.</h3>
+                </span>
+              </section>
+              <!-- Three -->
+              <section class="industry__img">
+                <article class="industry__content">
+                  <h2>Three</h2>
+                  <p>플랜트, 전자, 커머셜</p>
+                </article>
+              </section>
+            </article>
+          </div>
+        </section>
         <!-- Footer -->
         <footer id="footer" class="section__size">
           <div class="max-width footer__wrap">
@@ -112,5 +158,9 @@
         </footer>
       </main>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

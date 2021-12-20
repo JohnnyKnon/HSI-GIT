@@ -539,12 +539,22 @@ img {
     width: 100%;
     height: 1500px;
   }
+  /* Intro info */
+  .intro__info{
+    position: relative;
+    top: -90px;
+  }
+  /* Havelsan info */
+  .havelsan__info{
+    top: -10px;
+  }
+
+
   /* Thyss Intro */
   .thyss__title {
     position: relative;
     top: -10px;
   }
-
   /* Plasan */
   #plasan {
     top: 440px;
