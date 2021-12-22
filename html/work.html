@@ -7,6 +7,10 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../css/workCss/work_style.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+       <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Sans+KR:wght@300;500;700&display=swap"
@@ -21,8 +25,10 @@
     />
     <!-- JS Link -->
     <script src="../js/main.js" defer></script>
-    <script src="../js/slider_sonats.js" defer></script>
-    <script src="../js/slider_thyss.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="../js/slider.js" defer></script>
     <title>H.S.I | Work</title>
   </head>
   <body>
@@ -105,34 +111,24 @@
                 <i class="fas fa-download"></i> Download
               </button>
             </section>
+            
+            <!-- Slider -->
             <section class="sonats__right">
-              <div class="slideshow-container">
-                <div class="mySlides mySlides-sonats fade">
+              <div class="slideshow-container sonats__slideshow__container">
+                <div class="mySlides">
                   <img src="../images/USP.png" alt="usp" />
-                  <p class="text text-usp">USP-Utrasonic Shot Peening</p>
                 </div>
-
-                <div class="mySlides mySlides-sonats fade">
+                <div class="mySlides">
                   <img src="../images/UNS-1.png" alt="uns" />
-                  <div class="text">USP-Utrasonic Shot Peening</div>
                 </div>
 
-                <div class="mySlides mySlides-sonats fade">
+                <div class="mySlides">
                   <img src="../images/UIT.png" alt="uit" />
-                  <div class="text">UIT(NOMAD)-Ultrasonic Impact Treatment</div>
                 </div>
 
-                <div class="mySlides mySlides-sonats fade">
+                <div class="mySlides">
                   <img src="../images/material-2.png" alt="material" />
-                  <div class="text">Material & Shot Peening Measurement</div>
                 </div>
-              </div>
-              <br />
-              <div class="dot__wrap">
-                <span class="dot dot-sonats"></span>
-                <span class="dot dot-sonats"></span>
-                <span class="dot dot-sonats"></span>
-                <span class="dot dot-sonats"></span>
               </div>
             </section>
           </div>
@@ -199,36 +195,21 @@
               </button>
             </section>
             <section class="sonats__right">
-              <div class="slideshow-container">
-                <div class="mySlides mySlides-thyss fade">
+              <div class="slideshow-container thyss__slideshow__container">
+                <div class="mySlides">
                   <img src="../images/thyss-1.png" alt="Secure, Secure M"/>
-                  <p class="text text-usp">
-                    SECURE, SECURE M 300 ~ 600 HBW 최적화된 경·강도 차량 측 하방
-                    기본·부가 장갑 소재로 사용
-                  </p>
                 </div>
-
-                <div class="mySlides mySlides-thyss fade">
+                <div class="mySlides">
                   <img src="../images/thyss-2.png" alt="Triscure" />
-                  <div class="text">TRISECURE</div>
                 </div>
 
-                <div class="mySlides mySlides-thyss fade">
+                <div class="mySlides">
                   <img src="../images/thyss-3.png" alt="XAR" />
-                  <div class="text">XAR</div>
                 </div>
 
-                <div class="mySlides mySlides-thyss fade">
+                <div class="mySlides">
                   <img src="../images/thyss-4.png" alt="N-A-XTRA" />
-                  <div class="text">N-A-XTRA, XABO</div>
                 </div>
-                <br />
-              </div>
-              <div class="dot__wrap thyss__dot">
-                <span class="dot dot-thyss"></span>
-                <span class="dot dot-thyss"></span>
-                <span class="dot dot-thyss"></span>
-                <span class="dot dot-thyss"></span>
               </div>
             </section>
           </div>
@@ -298,7 +279,7 @@
             </section>
             <section class="sonats__right plasan__right">
               <div class="slideshow-container">
-                <div class="mySlides mySlides-single fade">
+                <div class="mySlides mySlides-single">
                   <img src="../images/plasan_img.png" alt="Spall liners" />
                   <div class="text text-plasan">Spall liners</div>
                 </div>
@@ -372,7 +353,7 @@
             </section>
             <section class="sonats__right">
               <div class="slideshow-container">
-                <div class="mySlides mySlides-single fade">
+                <div class="mySlides mySlides-single">
                   <img
                     src="../images/Havalsan__img.png"
                     alt="항공기 조정 시뮬레이터"
@@ -394,31 +375,5 @@
         <p class="ceo">대표_김영배</p>
       </div>
     </footer>
-    <!-- Script -->
-    <!-- Sonats Auto Slider -->
-    <script>
-      // // Auto slider
-      // var slideIndex = 0;
-      // showSlides();
-
-      // function showSlides() {
-      //   var i;
-      //   var slides = document.getElementsByClassName("mySlides-sonats");
-      //   var dots = document.getElementsByClassName("dot-sonats");
-      //   for (i = 0; i < slides.length; i++) {
-      //     slides[i].style.display = "none";
-      //   }
-      //   slideIndex++;
-      //   if (slideIndex > slides.length) {
-      //     slideIndex = 1;
-      //   }
-      //   for (i = 0; i < dots.length; i++) {
-      //     dots[i].className = dots[i].className.replace(" active", "");
-      //   }
-      //   slides[slideIndex - 1].style.display = "block";
-      //   dots[slideIndex - 1].className += " active";
-      //   setTimeout(showSlides, 3000); // Change image every 3 seconds
-      // }
-    </script>
   </body>
 </html>

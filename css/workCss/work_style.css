@@ -224,7 +224,7 @@ body {
 }
 
 .mySlides {
-  display: none;
+  display: block;
 }
 /* Plasan Slide*/
 .mySlides-single {
@@ -255,61 +255,6 @@ img {
   text-align: center;
 }
 
-/* Dot */
-.dot__wrap {
-  position: absolute;
-  left: 260px;
-  top: 555px;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: var(--color-dark-grey);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: var(--color-orange);
-}
-
-.active-thyss {
-  background-color: var(--color-orange);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* Slider Animation */
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-    transform: translateX(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-    transform: translateX(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 /* Sonats / Thyss / Plasan / Havelsan */
 
@@ -320,10 +265,6 @@ img {
   height: 2000px;
 }
 
-.text-usp {
-  position: relative;
-  top: -12px;
-}
 
 /* Thyss */
 #thyss {
@@ -421,10 +362,6 @@ img {
   /* Plasan merchandise */
   .text-plasan {
     bottom: -10px;
-  }
-
-  .text-usp {
-    top: -22px;
   }
 
   .dot__wrap {
