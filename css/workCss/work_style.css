@@ -255,7 +255,10 @@ img {
   text-align: center;
 }
 
-
+.text-usp {
+  position: relative;
+  top: -12px;
+}
 /* Sonats / Thyss / Plasan / Havelsan */
 
 /* Sonats */
@@ -364,16 +367,11 @@ img {
     bottom: -10px;
   }
 
-  .dot__wrap {
-    left: 130px;
-    top: 380px;
+  .text-usp {
+    top: -22px;
   }
 
-  /* Thyss Dot */
-  .thyss__dot {
-    position: absolute;
-    top: 420px;
-  }
+
   /* Sonats */
   #sonats {
     height: 1950px;

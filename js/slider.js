@@ -6,7 +6,7 @@ $(document).ready(function(){
       arrows: false,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       cssEase: 'linear'
     });
   });
@@ -19,7 +19,7 @@ $(document).ready(function(){
       arrows: false,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       cssEase: 'linear',
     });
   });
