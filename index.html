@@ -23,7 +23,19 @@
     />
     <!-- JS Link -->
     <script src="js/main.js" defer></script>
-    <title>H.S.I | Main</title>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+      integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slider.js" defer></script>
+    <title>HSInternational</title>
   </head>
   <body>
     <!-- Mix blend mode -->
@@ -51,7 +63,11 @@
       <!-- Main -->
       <main id="main" role="main">
         <section id="home" class="section__size">
-          <div class="home__img"></div>
+          <div class="home__img">
+            <img src="/images/HSIBG.jpg" alt="1번째 배경화면" />
+            <img src="/images/BG_2.jpg" alt="2번째 배경화면" />
+            <img src="/images/BG_3.jpg" alt="3번째 배경화면" />
+          </div>
           <header class="home__main__txt__wrap">
             <h1>
               글로벌 비즈니스의 미래를 열어가는
@@ -185,19 +201,36 @@
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-          <!-- 여기에 뉴스 -->
+            <!-- 여기에 뉴스 -->
+
             <article class="yeogie">
-              <img src="/images/yeogie.png" alt="여기에 인터뷰 해외 선진 기술을 제공하는 HSI">
-              <h4><a href="https://blog.yeogie.com/">[Yeogie인터뷰]<br/>해외 선진 기술을 제공하는 HSI</a></h4>
-              <p>친환경 용접 처리 표면이 가능한 <br/>초음파 피닝 교정 장비 공급</p>
+              <img
+                src="/images/yeogie.png"
+                alt="여기에 인터뷰 해외 선진 기술을 제공하는 HSI"
+              />
+              <div class="yeogie__txt">
+                <h4>
+                  <a href="https://blog.yeogie.com/" target="blank"
+                    >[Yeogie인터뷰]<br />해외 선진 기술을 제공하는 HSI</a
+                  >
+                </h4>
+                <p>
+                  친환경 용접 처리 표면이 가능한 <br />초음파 피닝 교정 장비
+                  공급
+                </p>
+              </div>
             </article>
-          <!-- Simtos 뉴스 -->
+            <!-- Simtos 뉴스 -->
             <article class="simtos">
-              <img src="images/simtos.jpg" alt="2018년 SIMTOS 공작기계전 참가">
+              <img
+                src="images/simtos.jpg"
+                alt="2018년 SIMTOS 공작기계전 참가"
+              />
               <h4>2018년SIMTOS 공작기계전 참가</h4>
             </article>
           </section>
         </section>
+
         <section id="contact" class="section__size">
           <div class="max-width contact__wrap">
             <header class="contact__header">
