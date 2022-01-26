@@ -179,7 +179,7 @@ body {
 }
 
 .about__cards {
-  width: 350px;
+  width: 250px;
   height: 500px;
   /* border radius */
   border-radius: 14px;
@@ -196,6 +196,7 @@ body {
   color: var(--color-white);
   mix-blend-mode: difference;
   font-size: var(--font-regular);
+  text-align: center;
   transform: translateY(60px);
   transition: all 400ms ease-in-out;
 }
@@ -220,17 +221,27 @@ body {
   color: var(--color-black);
 }
 
+/* About Card child 1 */
 .about__cards:nth-child(1) {
   /* Img */
-  background: url("../images/introCard.jpg") no-repeat -100px / cover;
+  background: url("../images/main/about_bg/introCard.jpg") no-repeat -150px / cover;
 }
 
+/* About Card child 2 */
 .about__cards:nth-child(2) {
-  background: url("../images/groupCard.jpg") no-repeat -40px / cover;
+  background: url("../images/main/about_bg/HSI_Partner_BG.jpg") no-repeat -210px /
+    cover;
 }
 
+/* About Card child 3 */
 .about__cards:nth-child(3) {
-  background: url("../images/businessCard.jpg") no-repeat -100px / cover;
+  background: url("../images/main/about_bg/groupCard.jpg") no-repeat -120px / cover;
+}
+
+/* About Card child 4 */
+.about__cards:nth-child(4) {
+  background: url("../images/main/about_bg/businessCard.jpg") no-repeat -100px /
+    cover;
 }
 
 .about__cards:hover,
@@ -517,7 +528,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
   flex-wrap: wrap;
   /* position */
   position: absolute;
@@ -528,64 +538,8 @@ a {
   font-family: var(--font-kr);
 }
 
-.address {
-  line-height: 5px;
-}
-
-.contact__info {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  position: relative;
-  top: -20px;
-}
-
-.contact__info__header {
-  /* font */
-  font-weight: var(--weight-bold);
-  font-size: var(--font-logo-size);
-  color: var(--color-dark-blue);
-}
-
-.contact__others {
-  line-height: 1px;
-}
-
-.others__group {
-  line-height: 35px;
-}
-
-.others__li span {
-  font-weight: var(--weight-bold);
-}
-
-.short-3 {
-  letter-spacing: 3.5px;
-}
-
 /* Responsive
-_____________________________________________________________ */
-@media screen and (max-width: 1519px) {
-  .contact__main {
-    margin-top: 10px;
-    justify-content: center;
-  }
-}
-
-/* 1359px max */
-@media screen and (max-width: 1502px) {
-  /* Contact Us */
-  #contact {
-    height: 1500px;
-  }
-
-  .contact__main {
-    margin-top: -100px;
-  }
-  .contact__info {
-    gap: 10px;
-  }
-}
+---------------------------------------------- */
 
 /* 1110px max */
 @media screen and (max-width: 1110px) {
@@ -702,11 +656,6 @@ _____________________________________________________________ */
   .about__cards {
     width: 350px;
     height: 400px;
-  }
-  .about__cards:nth-child(3) {
-    width: 720px;
-    height: 300px;
-    background-position: center;
   }
   /* work */
   #work {
