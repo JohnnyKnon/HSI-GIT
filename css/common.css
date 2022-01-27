@@ -6,7 +6,7 @@
   --color-dark-blue: #161e54;
   --color-white: #fff;
   --color-orange: #ff8a02;
-  --color-light-grey: #f7f7f7;
+  --color-light-grey: #eeecec;
   --color-grey: #e9e8e8;
   --color-dark-grey: #a7a6a6;
   --color-light-blue: #757ec3;
@@ -166,7 +166,7 @@ button {
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 195px;
+  height: 330px;
   background-color: var(--color-black);
 }
 
@@ -180,9 +180,27 @@ button {
   line-height: 10px;
 }
 
-.copyright {
-  font-weight: var(--weight-light);
-  line-height: 20px;
+.footer__wrap p {
+  font-family: var(--font-kr);
+  color: var(--color-white);
+}
+
+.ceo{
+  /* padding */
+  padding-top: 20px;
+}
+
+.footer__info{
+  /* font */
+  font-size: 14px;
+  font-weight: var(--weight-regular);
+  /* text */
+  line-height: 25px;
+}
+
+.footer__info > a{
+  /* font */
+  color: var(--color-dark-grey);
 }
 
 .footer__logo {
@@ -192,10 +210,10 @@ button {
   color: var(--color-white);
 }
 
-.footer__wrap p {
-  font-family: var(--font-kr);
-  color: var(--color-white);
+.copyright {
+  font-weight: var(--weight-light);
 }
+
 
 /* Responsive
 ===================================================== */
