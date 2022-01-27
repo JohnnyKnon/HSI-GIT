@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../css/aboutCss/about_style.css" />
-    <link rel="stylesheet" href="../css/aboutCss/group_device_style.css" />
     <link rel="stylesheet" href="../css/aboutCss/industry_device_style.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <!-- Google Fonts -->
@@ -35,7 +34,7 @@
       <nav id="navbar">
         <a href="../index.html" class="navbar__logo"><h1>HSI</h1></a>
         <section class="navbar__contents">
-          <ul class="navbar__menu navbar__menu-about">
+          <ul id="navbar__menu-about" class="navbar__menu">
             <li class="navbar__items">
               <a data-link="#introduce">About Us</a>
             </li>
@@ -104,17 +103,22 @@
           <header class="about__total__title">
             <h1>조직도</h1>
           </header>
-          <article
+          <figure
             class="group__img"
             data-aos="zoom-in-right"
             data-aos-duration="2000"
           >
             <img
-              src="../images/about/group/group-map-pc-modify.png"
+              src="../images/about/group/HSI-business-chart.png"
               alt="조직도"
             />
-            <h3>Group map</h3>
-          </article>
+            <img src="../images/about/group/hsi-business-chart-mobile.png" alt="모바일 조직도" />
+          </figure>
+          <p class="group__txt">
+            각 산업 분야 전문가로 구성된 기업 조직<Br/>
+            <span class="high-1">방위사업본부, 항공사업본부, 일반사업본부</span><br/>
+            고객 Project Needs에 적합한 맞춤형<br/> <span  class="high-1">TFT 조직 구성</span> 또한  가능
+          </p>
         </section>
         <!-- Industry -->
         <section id="industry">
@@ -192,7 +196,7 @@
               <br/>
               대표번호 - 02–477–8898
               <br/>
-              팩스 - 02–477–8897
+              Fax - 02–477–8897
             </p>
             <h3 class="footer__logo">HSI</h3>
             <p class="copyright">
