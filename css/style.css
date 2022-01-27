@@ -56,15 +56,15 @@ body {
 
 /* Home Images Slider */
 .home__img div:nth-of-type(1) {
-  background: url("../images/HSIBG.jpg") no-repeat center/cover;
+  background: url("../images/main/main_bg/HSIBG.jpg") no-repeat center/cover;
 }
 
 .home__img div:nth-of-type(2) {
-  background: url("../images/BG_2.jpg") no-repeat center/cover;
+  background: url("../images/main/main_bg/BG_2.jpg") no-repeat center/cover;
 }
 
 .home__img div:nth-of-type(3) {
-  background: url("../images/BG_3.jpg") no-repeat center/cover;
+  background: url("../images/main/main_bg/BG_3.jpg") no-repeat center/cover;
 }
 
 .home__main__txt__wrap {
@@ -146,6 +146,7 @@ body {
   background-color: var(--color-white);
   /* margin */
   margin: auto;
+
 }
 
 .about__header {
@@ -235,12 +236,12 @@ body {
 
 /* About Card child 3 */
 .about__cards:nth-child(3) {
-  background: url("../images/main/about_bg/groupCard.jpg") no-repeat -120px / cover;
+  background: url("../images/main/about_bg/groupCard.jpg") no-repeat center / cover;
 }
 
 /* About Card child 4 */
 .about__cards:nth-child(4) {
-  background: url("../images/main/about_bg/HSI_Partner_BG.jpg") no-repeat -210px /
+  background: url("../images/main/about_bg/HSI_Partner_BG.jpg") no-repeat center /
     cover;
 }
 
@@ -282,122 +283,6 @@ body {
   text-align: center;
 }
 
-.work__top {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  /* margin top */
-  margin-top: 120px;
-}
-
-.work__logo__wrap {
-  position: absolute;
-  top: -20px;
-  /* flex */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* Size */
-  width: 100%;
-  height: 350px;
-  /* bg color */
-  background-color: var(--color-grey);
-  /* visiblity */
-  visibility: hidden;
-  /* opacity */
-  opacity: 0;
-  /* transition */
-  z-index: 100;
-}
-
-.logo__wrap--visible {
-  visibility: visible;
-  opacity: 1;
-  transition: all 300ms 10ms ease-in-out;
-}
-
-.sonats {
-  width: 215px;
-  height: 90px;
-  background: url("../images/SONATS-couleur-2.png") no-repeat center/cover;
-}
-
-.thyss {
-  width: 230px;
-  height: 200px;
-  background: url("../images/Thyssenkrupp_logo_logotype-700x482.png") no-repeat
-    center/cover;
-}
-
-.plasan {
-  width: 300px;
-  height: 100px;
-  background: url("../images/Logo-Plasan-300x99.jpg") no-repeat center/cover;
-}
-
-.havelsan {
-  width: 215px;
-  height: 100px;
-  background: url("../images/Havelsan-750x375\ \(1\).png") no-repeat
-    center/cover;
-}
-
-.company__introduce {
-  width: 570px;
-  text-align: center;
-  font-family: var(--font-kr);
-  font-size: var(--font-micro);
-  color: var(--color-dark-blue);
-  line-height: 34px;
-}
-
-.work__top img {
-  width: 450px;
-  -webkit-box-shadow: 5px 5px 7px -1px #262626;
-  box-shadow: 5px 5px 7px -1px #262626;
-}
-.work__top__p {
-  /* outside */
-  position: relative;
-  background-color: var(--color-white);
-  width: 350px;
-  height: 270px;
-  border-radius: 10px;
-  /* inside */
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.work__title {
-  position: absolute;
-  top: -60px;
-  font-family: var(--font-kr);
-  font-size: var(--font-big);
-  color: var(--color-white);
-  margin-left: 30px;
-  margin-top: 14px;
-}
-
-.work__span {
-  /* move */
-  margin-top: 14px;
-  margin-left: 30px;
-  /* font */
-  font-family: var(--font-kr);
-  font-weight: var(--weight-regular);
-  color: var(--color-dark-blue);
-}
-
-.work__bottom {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
 .service__btn {
   width: 239px;
@@ -660,6 +545,14 @@ a {
   /* work */
   #work {
     margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  /* About */
+  #about {
+    /* height */
+    height: 1200px;
   }
 }
 
