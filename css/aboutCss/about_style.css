@@ -253,8 +253,8 @@ body {
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
 
-.industry__main .industry__img:hover,
-.industry__main .industry__img:active {
+.industry__main > .industry__img:hover,
+.industry__main > .industry__img:active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
