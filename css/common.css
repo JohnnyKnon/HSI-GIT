@@ -25,8 +25,8 @@
   --font-micro: 16px;
 
   /* Font Family */
-  --font-logo: "Libre Baskerville", serif;
-  --font-kr: "Noto Sans KR", sans-serif;
+  --font-logo: 'Libre Baskerville', serif;
+  --font-kr: 'Noto Sans KR', sans-serif;
   /* Font Weight */
   --weight-italic: 400;
   --weight-bold: 700;
@@ -46,7 +46,7 @@ body {
 }
 
 /* Mix blend mode Background Color */
-.mix__bg__color{
+.mix__bg__color {
   background-color: var(--color-white);
 }
 
@@ -132,7 +132,7 @@ button {
 }
 
 .navbar__items a::before {
-  content: "";
+  content: '';
   /* Size */
   width: 0%;
   height: 1px;
@@ -166,7 +166,7 @@ button {
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 330px;
+  height: 100%;
   background-color: var(--color-black);
 }
 
@@ -185,12 +185,12 @@ button {
   color: var(--color-white);
 }
 
-.ceo{
+.ceo {
   /* padding */
   padding-top: 20px;
 }
 
-.footer__info{
+.footer__info {
   /* font */
   font-size: 14px;
   font-weight: var(--weight-regular);
@@ -198,7 +198,7 @@ button {
   line-height: 25px;
 }
 
-.footer__info > a{
+.footer__info > a {
   /* font */
   color: var(--color-dark-grey);
 }
@@ -212,8 +212,9 @@ button {
 
 .copyright {
   font-weight: var(--weight-light);
+  /* text */
+  line-height: 30px;
 }
-
 
 /* Responsive
 ===================================================== */
@@ -242,7 +243,7 @@ button {
     /* width */
     width: 120%;
     /* height */
-    height: 285px;
+    height: 320px;
     /* padding */
     padding-top: 30px;
     padding-bottom: 20px;
@@ -258,7 +259,7 @@ button {
     height: 235px;
   }
   /* About part menu height */
-  .navbar__menu-about{
+  .navbar__menu-about {
     height: 190px;
   }
 

@@ -78,7 +78,8 @@ body {
 /* Introduce Image */
 .introduce__image {
   /* Background Image */
-  background: url("../../images/about/bg/inroduce_image.jpg") no-repeat center/cover;
+  background: url('../../images/about/bg/inroduce_image.jpg') no-repeat
+    center/cover;
   /* Background size */
   width: 500px;
   height: 500px;
@@ -169,14 +170,14 @@ body {
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.48);
 }
 
-.group__img > img:nth-of-type(1){
-    /* size */
-    width: 600px;
-    /* padding */
-    padding: 0 20px;
+.group__img > img:nth-of-type(1) {
+  /* size */
+  width: 600px;
+  /* padding */
+  padding: 0 20px;
 }
 
-.group__img > img:nth-of-type(2){
+.group__img > img:nth-of-type(2) {
   /* display */
   display: none;
   /* size */
@@ -198,11 +199,10 @@ body {
 
 .high-1 {
   /* font */
-  font-size: 20px;
+  font-size: 18px;
   font-weight: var(--weight-bold);
-  color: var(--color-orange);
+  color: var(--color-blue);
 }
-
 
 /* industry */
 #industry {
@@ -247,24 +247,26 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.6s ;
+  transition: 0.6s;
 }
 
 /* One */
 .industry__main > .industry__img:nth-of-type(1) {
-  background: url("../../images/about/industry/transportation.png") no-repeat center/cover;
+  background: url('../../images/about/industry/transportation.png') no-repeat
+    center/cover;
   clip-path: polygon(0 0, 40% 0, 20% 100%, 0% 100%);
 }
 
 /* Two */
 .industry__main > .industry__img:nth-of-type(2) {
-  background: url("../../images/about/industry/zeep.png") no-repeat center/cover;
+  background: url('../../images/about/industry/zeep.png') no-repeat center/cover;
   clip-path: polygon(40% 0, 100% 0, 65% 100%, 20% 100%);
 }
 
 /* Three */
 .industry__main > .industry__img:nth-of-type(3) {
-  background: url("../../images/about/industry/technology.png") no-repeat center/cover;
+  background: url('../../images/about/industry/technology.png') no-repeat
+    center/cover;
   clip-path: polygon(80% 0, 100% 0, 100% 100%, 65% 100%);
 }
 
@@ -305,13 +307,13 @@ body {
 }
 
 .industry__main .industry__img:hover .industry__info__touch,
-.industry__main .industry__img:active .industry__info__touch{
+.industry__main .industry__img:active .industry__info__touch {
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
 
 /* industry mouse over */
-.industry__info__touch{
+.industry__info__touch {
   /* position */
   position: absolute;
   top: 50%;
@@ -325,21 +327,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   /* opacity */
   opacity: 0.5;
   transition: all 300ms ease-in-out;
 }
 
-.industry__info__touch > i{
+.industry__info__touch > i {
   font-size: 120px;
 }
 
-.industry__info__touch h3{
+.industry__info__touch h3 {
   font-size: var(--font-small);
 }
 /* Industry mobile none */
-.industry__main-mobile{
+.industry__main-mobile {
   display: none;
 }
 
@@ -398,17 +400,16 @@ body {
     width: 630px;
   }
   /* Industry height size */
-  #main > #industry{
+  #main > #industry {
     margin-top: -300px;
     height: 60em;
   }
-
 }
 
 /* Max-width 738px */
 @media screen and (max-width: 738px) {
   /* nav */
-  #navbar__menu-about{
+  #navbar__menu-about {
     height: 230px;
   }
   /* Introduce */
@@ -450,14 +451,13 @@ body {
   }
 }
 
-@media screen and (max-width: 672px){
-  
+@media screen and (max-width: 672px) {
   /* business chart */
-  .group__img > img:nth-of-type(1){
+  .group__img > img:nth-of-type(1) {
     display: none;
   }
 
-  .group__img > img:nth-of-type(2){
+  .group__img > img:nth-of-type(2) {
     display: block;
   }
 }

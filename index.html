@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 사이트 소유 meta -->
-    <meta name="naver-site-verification" content="1591f3496d358b4e61524cadea8f133bc350db6f" />
+    <meta
+      name="naver-site-verification"
+      content="1591f3496d358b4e61524cadea8f133bc350db6f"
+    />
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -26,17 +32,13 @@
     <!-- JS Link -->
     <script src="js/main.js" defer></script>
     <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
     <script
-      src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
-      integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/slider.js" defer></script>
     <title>HSI</title>
   </head>
   <body>
@@ -48,6 +50,7 @@
         <section class="navbar__contents">
           <ul class="navbar__menu">
             <li class="navbar__items"><a data-link="#home">Home</a></li>
+            <li class="navbar__items"><a data-link="#history">History</a></li>
             <li class="navbar__items"><a data-link="#about">About</a></li>
             <li class="navbar__items"><a data-link="#work">Service</a></li>
             <li class="navbar__items"><a data-link="#news">News</a></li>
@@ -64,157 +67,121 @@
       </nav>
       <!-- Main -->
       <main id="main" role="main">
-        <section id="home" class="section__size">
-          <div class="home__img">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <header class="home__main__txt__wrap">
-            <h1>
-              글로벌 비즈니스의 미래를 열어가는
-              <span class="reponsive__span">HSI</span>
-            </h1>
-            <p class="home__main__p">
-              국내외 기술 장비와 다양한 제품을 제공하는 글로벌 선도기업, HSI
-              방문을 환영합니다
-            </p>
-            <button class="home__pdf__btn">HSI 소개 PDF 다운로드</button>
+        <!-- Home -->
+        <section id="home">
+          <header class="home__header">
+            <h1>글로벌 비즈니스의 미래를 열어가는 HSI</h1>
           </header>
+          <section id="home__img">
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+          <p class="home__hello">
+            국내외 기술 장비와 다양한 제품을 제공하는 글로벌 선도기업, HSI
+            방문을 환영합니다.
+          </p>
+
+          <button class="home__button">PDF DOWNLOAD</button>
+        </section>
+        <!-- History -->
+        <section id="history">
+          <header class="history__header">
+            <h1>프로젝트 연혁</h1>
+          </header>
+          <article
+            class="projectHistory"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <section class="date">
+              <h2>18.03.~</h2>
+              <h2>18.08.~</h2>
+              <h2>20.03.~</h2>
+              <h2>20.12.~</h2>
+            </section>
+            <section class="projectHistory__txt">
+              <p
+                data-aos="fade-up-left"
+                data-aos-delay="100"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                <span>현대로템</span> <br />항공기체 형상 개선 Project
+              </p>
+              <p
+                data-aos="fade-up-left"
+                data-aos-delay="150"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                <span>삼성전자</span> <br />CE/IM 소개강화 Project
+              </p>
+              <p
+                data-aos="fade-up-left"
+                data-aos-delay="200"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                <span>한국항공우주산업(KAI)</span> <br />구조물 형상 개선
+                Project
+              </p>
+              <p
+                data-aos="fade-up-left"
+                data-aos-delay="250"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                <span>두산중공업</span> <br />원자력 CASK 용접후처리 Project
+              </p>
+            </section>
+          </article>
         </section>
         <!-- About -->
-        <section id="about" class="section__size">
+        <section id="about">
           <header class="about__header">
-            <h1 class="header__txt">About</h1>
+            <h1>About</h1>
           </header>
-
-          <div
-            class="about__card__container"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <div class="about__cards">
+          <div class="about__box">
+            <section class="about__link__items">
               <h2>회사소개</h2>
-              <button
-                class="layer__card__about"
-                type="button"
-                onclick="location.href='html/about.html#introduce'"
-              >
-                바로가기
-              </button>
-            </div>
-            <div class="about__cards">
+              <a href="./html/about.html#about">바로가기</a>
+            </section>
+            <section class="about__link__items">
               <h2>조직도</h2>
-              <button
-                class="layer__card__group"
-                type="button"
-                onclick="location.href='html/about.html#group'"
-              >
-                바로가기
-              </button>
-            </div>
-            <div class="about__cards">
+              <a href="./html/about.html#group">바로가기</a>
+            </section>
+            <section class="about__link__items">
               <h2>산업분야</h2>
-              <button
-                class="layer__card__industry"
-                type="button"
-                onclick="location.href='html/about.html#industry'"
-              >
-                바로가기
-              </button>
-            </div>
-            <div class="about__cards">
+              <a href="./html/about.html#industry">바로가기</a>
+            </section>
+            <section class="about__link__items">
               <h2>고객사</h2>
-              <button
-                class="layer__card__about"
-                type="button"
-                onclick="location.href='html/about.html#introduce'"
-              >
-                바로가기
-              </button>
-            </div>
-          </div>
-        </section>
-        <!-- Work -->
-        <section id="work" class="section__size">
-          <div class="work__wrap max-width">
-            <header class="work__header">
-              <h1 class="header__txt">Service & Solutions</h1>
-            </header>
-            
-          </div>
-        </section>
-        <section id="news" class="section__size">
-          <header class="news__header">
-            <h1 class="header__txt">News</h1>
-          </header>
-          <!-- News Wrap -->
-          <section
-            class="news__wrap"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <!-- 여기에 뉴스 -->
-
-            <article class="yeogie">
-              <img
-                src="/images/main/news/yeogie.png"
-                alt="여기에 인터뷰 해외 선진 기술을 제공하는 HSI"
-              />
-              <div class="yeogie__txt">
-                <h4>
-                  <a href="https://blog.yeogie.com/" target="blank"
-                    >[Yeogie인터뷰]<br />해외 선진 기술을 제공하는 HSI</a
-                  >
-                </h4>
-                <p>
-                  친환경 용접 처리 표면이 가능한 <br />초음파 피닝 교정 장비
-                  공급
-                </p>
-              </div>
-            </article>
-            <!-- Simtos 뉴스 -->
-            <article class="simtos">
-              <img
-                src="images/main/news/simtos.jpg"
-                alt="2018년 SIMTOS 공작기계전 참가"
-              />
-              <h4>2018년SIMTOS 공작기계전 참가</h4>
-            </article>
-          </section>
-        </section>
-
-        <section id="contact" class="section__size">
-          <div class="max-width contact__wrap">
-            <header class="contact__header">
-              <h1 class="header__txt">Contact Us</h1>
-            </header>
-            <!-- contact main -->
-            <section class="contact__main">
-              <div class="contact__map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.9735060368084!2d127.13254576549441!3d37.53399535872194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caffc6a71042f%3A0x47a090ea3fea8ac5!2z7ISc7Jq47Yq567OE7IucIOqwleuPmeq1rCDshLHrgrTrj5kg7LKc7Zi464yA66GcMTcw6ri4IDI4!5e0!3m2!1sko!2skr!4v1637627827684!5m2!1sko!2skr"
-                  width="400"
-                  height="400"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  class="map"
-                ></iframe>
-              </div>
+              <a href="./html/about.html#industry">바로가기</a>
             </section>
           </div>
         </section>
+        <!-- Service -->
+        <section id="service"></section>
+        <!-- news -->
+        <section id="news"></section>
+        <!-- contact -->
+        <section id="contact"></section>
         <footer id="footer" class="section__size">
           <div class="max-width footer__wrap">
             <p class="ceo">대표_김영배</p>
             <p class="footer__info">
-              사업자등록번호 - 126-08-36131 &nbsp;<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1260836131" target="_blank">&nbsp;[사업자번호조회]</a>
-              <br/>
+              사업자등록번호 - 126-08-36131 &nbsp;<a
+                href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1260836131"
+                target="_blank"
+                >&nbsp;[사업자번호조회]</a
+              >
+              <br />
               주소 - 서울시 강동구 천호대로 170길 28, 2층
-              <br/>
+              <br />
               대표번호 - 02–477–8898
-              <br/>
+              <br />
               Fax - 02–477–8897
             </p>
             <h3 class="footer__logo">HSI</h3>
@@ -225,9 +192,15 @@
         </footer>
       </main>
     </div>
+    <!-- Slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>
