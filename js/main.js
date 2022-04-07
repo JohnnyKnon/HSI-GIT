@@ -33,3 +33,16 @@ function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector); //scrollIntoView엘리멘트 의 부모 컨테이너로 스크롤되는 메소드
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
+
+// Typo Animation
+const CONTENT = '글로벌 비즈니스의 미래를 열어가는 HSI';
+const HOME_TITLE = document.querySelector('.home__title');
+let n = 0;
+
+const TYPING = function () {
+  HOME_TITLE.innerHTML += CONTENT[n++];
+  if (n == CONTENT.length) {
+    clearInterval(SPEED);
+  }
+};
+const SPEED = setInterval(TYPING, 100);

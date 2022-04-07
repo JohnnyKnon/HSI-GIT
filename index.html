@@ -52,7 +52,7 @@
             <li class="navbar__items"><a data-link="#home">Home</a></li>
             <li class="navbar__items"><a data-link="#history">History</a></li>
             <li class="navbar__items"><a data-link="#about">About</a></li>
-            <li class="navbar__items"><a data-link="#work">Service</a></li>
+            <li class="navbar__items"><a data-link="#service">Service</a></li>
             <li class="navbar__items"><a data-link="#news">News</a></li>
             <li class="navbar__items">
               <a data-link="#contact">Contact Us</a>
@@ -70,7 +70,7 @@
         <!-- Home -->
         <section id="home">
           <header class="home__header">
-            <h1>글로벌 비즈니스의 미래를 열어가는 HSI</h1>
+            <h1 class="home__title"></h1>
           </header>
           <section id="home__img">
             <div></div>
@@ -87,55 +87,53 @@
         <!-- History -->
         <section id="history">
           <header class="history__header">
-            <h1>프로젝트 연혁</h1>
+            <h1>History</h1>
           </header>
-          <article
-            class="projectHistory"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <section class="date">
+          <article class="history__contents__box">
+            <div
+              class="history__contents__items"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               <h2>18.03.~</h2>
+              <h3>현대로템</h3>
+              <p>항공기체 형상 개선 Project</p>
+            </div>
+            <div
+              class="history__contents__items"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               <h2>18.08.~</h2>
+              <h3>삼성전자</h3>
+              <p>CE/IM 소재강화 Project</p>
+            </div>
+            <div
+              class="history__contents__items"
+              data-aos="flip-left"
+              data-aos-delay="300"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               <h2>20.03.~</h2>
+              <h3>한국항공우주산업(KAI)</h3>
+              <p>구조물 형상 개선 Project</p>
+            </div>
+            <div
+              class="history__contents__items"
+              data-aos="flip-left"
+              data-aos-delay="400"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
               <h2>20.12.~</h2>
-            </section>
-            <section class="projectHistory__txt">
-              <p
-                data-aos="fade-up-left"
-                data-aos-delay="100"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-              >
-                <span>현대로템</span> <br />항공기체 형상 개선 Project
-              </p>
-              <p
-                data-aos="fade-up-left"
-                data-aos-delay="150"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-              >
-                <span>삼성전자</span> <br />CE/IM 소개강화 Project
-              </p>
-              <p
-                data-aos="fade-up-left"
-                data-aos-delay="200"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-              >
-                <span>한국항공우주산업(KAI)</span> <br />구조물 형상 개선
-                Project
-              </p>
-              <p
-                data-aos="fade-up-left"
-                data-aos-delay="250"
-                data-aos-duration="2000"
-                data-aos-easing="ease-in-out"
-              >
-                <span>두산중공업</span> <br />원자력 CASK 용접후처리 Project
-              </p>
-            </section>
+              <h3>두산중공업</h3>
+              <p>원자력 CASK 용접후처리 Project</p>
+            </div>
           </article>
         </section>
         <!-- About -->
@@ -191,13 +189,152 @@
           </div>
         </section>
         <!-- Service -->
-        <section id="service"></section>
+        <section id="service">
+          <header class="service__header">
+            <h1>Service & Solution</h1>
+          </header>
+          <article class="service__contents__box">
+            <section class="service__img"></section>
+            <section class="service__text">
+              <p class="short__intro">
+                유럽·미국 등 세계 각국에 뛰어난 기술력을 가진 히든챔피언(Hidden
+                Champions)의 최첨단 기술을 발굴하여 최적의 솔루션을 제공합니다.
+              </p>
+              <ul class="service__ul">
+                <li>- 파트너 사 및 국내 고객사 간 에이전트 업무</li>
+                <li>- 국내 기업 및 연구소 기술 테스트 연구 용역 대행</li>
+                <li>- 국내 업체 솔루션 해외 홍보 및 판매 컨설팅</li>
+              </ul>
+              <button class="detail__btn">자세히 보러가기</button>
+            </section>
+          </article>
+          <h2 class="partner__title">파트너사</h2>
+          <article class="logo__slider">
+            <button class="prev">
+              <i class="fas fa-caret-left"></i>
+            </button>
+            <div class="logo__items">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <button class="next">
+              <i class="fas fa-caret-right"></i>
+            </button>
+          </article>
+        </section>
         <!-- news -->
-        <section id="news"></section>
+        <section id="news">
+          <header class="news__header">
+            <h1>News</h1>
+          </header>
+          <section class="news__contents__box">
+            <article
+              class="news__contents__items"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="news__image yeogie"></div>
+              <div>
+                <h2>
+                  <a href="https://blog.yeogie.com/"
+                    >[ Yeogie인터뷰 ]<br />해외 선진 기술을 제공하는 HSI
+                  </a>
+                </h2>
+                <p>친환경 용접 처리 표면이 가능한 초음파 피닝 교정 장비 공급</p>
+              </div>
+            </article>
+            <article
+              class="news__contents__items"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="news__image simtos"></div>
+              <div>
+                <h2>
+                  <a href="#">2018년 SIMTOS 공작기계전 참가</a>
+                </h2>
+              </div>
+            </article>
+          </section>
+        </section>
         <!-- contact -->
-        <section id="contact"></section>
+        <section id="contact">
+          <header class="contact__header">
+            <h1>Contact Us</h1>
+          </header>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1581.941059069769!2d127.13265!3d37.534276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caffc6a71042f%3A0x47a090ea3fea8ac5!2z7ISc7Jq47Yq567OE7IucIOqwleuPmeq1rCDsspztmLjrjIDroZwxNzDquLggMjg!5e0!3m2!1sko!2skr!4v1649312524727!5m2!1sko!2skr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <section class="contact__contents__box">
+            <p>
+              <span>Address.</span> 서울시 강동구 천호대로 170길 28, 2층<br />
+              <span>Tel.</span> 02-477-8898&nbsp;&nbsp;
+              <span>Fax.</span> 02-477-8897
+            </p>
+            <p>
+              <span>E-mail.</span> support@hsinternational.co.kr<br />
+              <span>담당자.</span> 경영지원팀 허승제 팀장
+            </p>
+          </section>
+          <ul class="contact__input__list">
+            <li class="contact__input__items">
+              <h2>문의 내용</h2>
+              <div class="radio__box">
+                <input
+                  type="radio"
+                  name="contactType"
+                  id="web__radio"
+                  class="radio"
+                />
+                <label for="web__radio">제휴 문의</label>
+                <input
+                  type="radio"
+                  name="contactType"
+                  id="newsletter__radio"
+                  class="radio"
+                />
+                <label for="newsletter__radio">파트너</label>
+                <input
+                  type="radio"
+                  name="contactType"
+                  id="etc__radio"
+                  class="radio"
+                />
+                <label for="etc__radio">일반문의</label>
+                <input
+                  type="radio"
+                  name="contactType"
+                  id="etc__radio"
+                  class="radio"
+                />
+                <label for="etc__radio">A/S</label>
+              </div>
+            </li>
+            <li class="contact__input__items"></li>
+            <li class="contact__input__items"></li>
+            <li class="contact__input__items"></li>
+            <li class="contact__input__items"></li>
+            <li class="contact__input__items"></li>
+            <li class="contact__input__items"></li>
+          </ul>
+        </section>
         <footer id="footer" class="section__size">
           <div class="max-width footer__wrap">
+            <h3 class="footer__logo">HSI</h3>
             <p class="ceo">대표_김영배</p>
             <p class="footer__info">
               사업자등록번호 - 126-08-36131 &nbsp;<a
@@ -212,7 +349,6 @@
               <br />
               Fax - 02–477–8897
             </p>
-            <h3 class="footer__logo">HSI</h3>
             <p class="copyright">
               Copyright&copy; 2021 H.S.I Company. All Right Reserved.
             </p>

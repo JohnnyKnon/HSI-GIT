@@ -18,6 +18,14 @@
   /* psotion */
   position: relative;
   top: 60px;
+  /* text */
+  text-align: center;
+  /* size */
+  width: 90%;
+  /* margin */
+  margin-bottom: 40px;
+  /* border */
+  border-bottom: 1px solid var(--color-dark-grey);
 }
 
 /* customers List */
