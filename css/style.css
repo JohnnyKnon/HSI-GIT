@@ -138,12 +138,12 @@ main {
   font-family: var(--font-kr);
   font-size: 15px;
   color: var(--color-white);
+  /* size */
+  width: 160px;
   /* border */
   border: 1px solid var(--color-white);
   /* margin */
   margin-top: 10px;
-  /* padding */
-  padding: 10px 15px;
   /* transition */
   transition: all 250ms ease-in-out;
   /* animation */
@@ -159,6 +159,21 @@ main {
   /* z-index */
   z-index: 100;
 }
+
+.home__button > a {
+  /* display */
+  display: inline-block;
+  /* size */
+  width: 100%;
+  height: 100%;
+  /* padding */
+  padding: 10px;
+  /* font */
+  color: var(--color-white);
+  /* transition */
+  transition: all 250ms ease-out;
+}
+
 /* after */
 .home__button::after {
   content: '';
@@ -189,10 +204,14 @@ main {
 /* hover */
 .home__button:hover,
 .home__button:focus {
-  /* font */
-  color: var(--color-black);
   /* background */
   background-color: var(--color-white);
+}
+
+.home__button:hover a,
+.home__button:focus a {
+  /* font */
+  color: var(--color-black);
 }
 
 /* Home Respawnsive */
