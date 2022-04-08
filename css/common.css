@@ -87,6 +87,12 @@ button {
   outline: none;
 }
 
+/* text area */
+textarea {
+  /* border */
+  border: 1px solid var(--color-dark-grey);
+}
+
 .max-width {
   max-width: 1200px;
   margin: auto;

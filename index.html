@@ -291,46 +291,106 @@
             </p>
           </section>
           <ul class="contact__input__list">
-            <li class="contact__input__items">
-              <h2>문의 내용</h2>
-              <div class="radio__box">
+            <li class="contact__privacy">
+              <label for="agree__contact" id="contact__privacy__label"
+                ><h2>개인정보 약관동의</h2></label
+              >
+              <textarea name="agreeText" id="agree__contact" rows="10" readonly>
+1. 수집하는 개인정보 항목
+본 사이트는 온라인 상담을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+수집항목: 회사명, 담당자명, 전화번호, 이메일
+개인정보 수집방법: Contact Us 문의하기
+
+2. 개인정보의 수집 및 이용목적
+회사는 수집한 개인정보를 다음의 목적을 위해 사용합니다.
+제휴문의 | 파트너 | 일반문의 | A/S
+
+3. 개인정보의 보유 및 이용기간
+원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+              </textarea>
+              <!-- Agree check -->
+              <div class="agree__checkbox">
                 <input
-                  type="radio"
-                  name="contactType"
-                  id="web__radio"
-                  class="radio"
+                  type="checkbox"
+                  name="agreeContact"
+                  id="contact__check"
+                  required
                 />
-                <label for="web__radio">제휴 문의</label>
-                <input
-                  type="radio"
-                  name="contactType"
-                  id="newsletter__radio"
-                  class="radio"
-                />
-                <label for="newsletter__radio">파트너</label>
-                <input
-                  type="radio"
-                  name="contactType"
-                  id="etc__radio"
-                  class="radio"
-                />
-                <label for="etc__radio">일반문의</label>
-                <input
-                  type="radio"
-                  name="contactType"
-                  id="etc__radio"
-                  class="radio"
-                />
-                <label for="etc__radio">A/S</label>
+                <label for="contact__check">약관에 동의 하시겠습니까?</label>
               </div>
             </li>
-            <li class="contact__input__items"></li>
-            <li class="contact__input__items"></li>
-            <li class="contact__input__items"></li>
-            <li class="contact__input__items"></li>
-            <li class="contact__input__items"></li>
-            <li class="contact__input__items"></li>
+            <li class="contact__input__items">
+              <label for="contact__select"><h2>문의 종류</h2></label>
+              <select name="contactType" id="contact__select" required>
+                <option value="">
+                  -- 문의하실 문의종류를 선택해주세요. --
+                </option>
+                <option value="alliance">제휴문의</option>
+                <option value="partner">파트너</option>
+                <option value="normal">일반문의</option>
+                <option value="as">A/S</option>
+              </select>
+            </li>
+            <li class="contact__input__items">
+              <label for="name__contact">
+                <h2>담당자명</h2>
+              </label>
+              <input
+                type="text"
+                id="name__contact"
+                name="nameContact"
+                placeholder="이름을 입력하세요."
+                required
+              />
+            </li>
+            <li class="contact__input__items">
+              <label for="tel__contact">
+                <h2>연락처</h2>
+              </label>
+              <input
+                type="tel"
+                id="tel__contact"
+                name="telContact"
+                placeholder="ex) 010-0000-0000"
+                required
+              />
+            </li>
+            <li class="contact__input__items">
+              <label for="mail__contact">
+                <h2>이메일</h2>
+              </label>
+              <input
+                type="email"
+                id="email__contact"
+                name="emailContact"
+                placeholder="ex) email@example.com"
+                required
+              />
+            </li>
+            <li class="contact__input__items">
+              <label for="company__contact">
+                <h2>회사명</h2>
+              </label>
+              <input
+                type="text"
+                id="company__contact"
+                name="companyContact"
+                placeholder="회사명을 입력해주세요."
+              />
+            </li>
+            <li class="contact__input__items">
+              <label for="contact__contact">
+                <h2>문의내용</h2>
+              </label>
+              <textarea
+                id="contents__contact"
+                name="contentsQuotation"
+                placeholder="내용을 입력해주세요."
+                required
+              ></textarea>
+            </li>
           </ul>
+          <input id="contact__send" type="submit" value="SEND" />
         </section>
         <footer id="footer" class="section__size">
           <div class="max-width footer__wrap">
