@@ -17,4 +17,13 @@ $(document).ready(function () {
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
   });
+  $('.product__right').slick({
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 });

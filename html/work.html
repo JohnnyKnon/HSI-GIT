@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/common.css" />
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Add the new slick-theme.css if you want the default styling -->
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
     <!-- Google Fonts -->
@@ -37,7 +39,6 @@
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script src="../js/slider.js" defer></script>
     <title>HSI | Service</title>
   </head>
   <body>
@@ -47,9 +48,13 @@
       <section class="navbar__contents">
         <ul class="navbar__menu navbar__menu-work">
           <li class="navbar__items"><a data-link="#sonats">Sonats</a></li>
-          <li class="navbar__items"><a data-link="#thyss">Thyssenkrupp</a></li>
-          <li class="navbar__items"><a data-link="#plasan">Plasan</a></li>
-          <li class="navbar__items"><a data-link="#havelsan">Havelsan</a></li>
+          <li class="navbar__items"><a data-link="#sonimat">Sonimat</a></li>
+          <li class="navbar__items"><a data-link="#bisalloy">Bisalloy</a></li>
+          <li class="navbar__items"><a data-link="#impact">Impact</a></li>
+          <li class="navbar__items">
+            <a data-link="#fabrisonic">Fabrisonic</a>
+          </li>
+          <li class="navbar__items"><a data-link="#others">others</a></li>
         </ul>
       </section>
       <!-- toggle btn -->
@@ -59,21 +64,370 @@
         <span class="hamburger toggle-c"></span>
       </div>
     </nav>
-
     <!-- Main -->
-
     <main id="main">
       <!-- Sonats -->
-
-      <section id="sonats"></section>
-
-      <!-- Plasan -->
-
-      <section id="plasan"></section>
-
-      <!-- Havalsan -->
-
-      <section id="havelsan"></section>
+      <section id="sonats" class="work__main__section__size">
+        <article id="sonats__intro" class="intro">
+          <div id="sonats__bg" class="bg"></div>
+          <header
+            class="intro__header"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <h1>Sonats</h1>
+          </header>
+          <p
+            id="sonats__contents"
+            class="intro__contents"
+            class="intro__header"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            SONATS는 초음파(Stressonic®)를 이용한 금속·비금속의 표면처리로
+            경·강도 강화, 압축·잔류응력 제어, 피로수명 연장 등에서 세계 최고의
+            기술을 보유한 기업입니다.
+          </p>
+          <div
+            class="scroll"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <p>scroll down<br /><i class="fas fa-caret-down"></i></p>
+          </div>
+        </article>
+        <section id="sonats__product" class="product">
+          <article class="product__left">
+            <img
+              class="logo"
+              src="../images/work/sonats/logo/SONATS-blanc.png"
+              alt=""
+            />
+            <h2 class="place">Nantes, France</h2>
+            <ul class="list">
+              <li><i class="fas fa-ellipsis-v"></i> Ultrasonic Shot Peening</li>
+              <li>
+                <i class="fas fa-ellipsis-v"></i> Ultrasonic Peen Forming,
+                Straightening
+              </li>
+              <li>
+                <i class="fas fa-ellipsis-v"></i> Weld Impact Treatment (HFMI or
+                UIT)
+              </li>
+              <li><i class="fas fa-ellipsis-v"></i> Nano-crystallization</li>
+              <li>
+                <i class="fas fa-ellipsis-v"></i> Stress Corrosion Cracking
+                Mitigation
+              </li>
+            </ul>
+            <button id="sonats__video" class="video__btn">
+              <i class="fas fa-video"></i>&nbsp; Video
+            </button>
+            <button id="sonats__down" class="down__btn">
+              <i class="fas fa-download"></i>&nbsp; Download
+            </button>
+          </article>
+          <section id="sonats__slider" class="product__right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </section>
+      </section>
+      <!-- sonimat -->
+      <section id="sonimat" class="work__main__section__size">
+        <article id="sonimat__intro" class="intro">
+          <div id="sonimat__bg" class="bg"></div>
+          <header
+            class="intro__header"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <h1>Sonimat</h1>
+          </header>
+          <p
+            id="sonimat__contents"
+            class="intro__contents"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            SONIMAT은 초음파 컷팅, 웰딩 솔루션 전문 기업으로서, Composite 및
+            식품의 초음파 세단과 초음파를 이용한 직물 및 플라스틱 접합 및 용접에
+            특화 된 기업입니다.
+          </p>
+          <div
+            class="scroll"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <p>scroll down<br /><i class="fas fa-caret-down"></i></p>
+          </div>
+        </article>
+        <section id="sonimat__product" class="product">
+          <article class="product__left">
+            <img
+              id="sonimat__logo"
+              class="logo"
+              src="../images/work/sonimat/logo/sonimat ci.png"
+              alt=""
+            />
+            <h2 class="place">Carquefou, France</h2>
+            <ul class="list">
+              <li>
+                <i class="fas fa-ellipsis-v"></i> Infrared welding & HPW LSW ESW
+                RSW
+              </li>
+              <li><i class="fas fa-ellipsis-v"></i> SONIBLADE</li>
+              <li><i class="fas fa-ellipsis-v"></i> SONIROLL</li>
+              <li><i class="fas fa-ellipsis-v"></i> SONISLICE</li>
+              <li><i class="fas fa-ellipsis-v"></i> SONIPACK</li>
+            </ul>
+            <button id="sonimat__video" class="video__btn">
+              <i class="fas fa-video"></i>&nbsp; Video
+            </button>
+            <button id="sonimat__down" class="down__btn">
+              <i class="fas fa-download"></i>&nbsp; Download
+            </button>
+          </article>
+          <section id="sonimat__slider" class="product__right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </section>
+      </section>
+      <!-- Bisalloy -->
+      <section id="bisalloy" class="work__main__section__size">
+        <article id="bisalloy__intro" class="intro">
+          <div id="bisalloy__bg" class="bg"></div>
+          <header
+            class="intro__header"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <h1>Bisalloy</h1>
+          </header>
+          <p
+            id="bisalloy__contents"
+            class="intro__contents"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            Bisalloy는 호주 유일 내마모강 고강도강 제작 업체입니다. Bisalloy®은
+            Wear Steel, Structural Steel, Armour Steel 등 다양한 제품군을
+            제공하며 아낌없는 기술 지원 서비스를 제공할 것을 약속합니다.
+          </p>
+          <div
+            class="scroll"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <p>scroll down<br /><i class="fas fa-caret-down"></i></p>
+          </div>
+        </article>
+        <section id="bisalloy__product" class="product">
+          <article class="product__left">
+            <img
+              id="bisalloy__logo"
+              class="logo"
+              src="../images/work/bisalloy/logo/bisalloy ci.png"
+              alt=""
+            />
+            <h2 class="place">New South Wales, Australia</h2>
+            <ul class="list">
+              <li><i class="fas fa-ellipsis-v"></i> Bisalloy® Armour Steel</li>
+              <li>
+                <i class="fas fa-ellipsis-v"></i> Bisalloy® Protection Steel
+              </li>
+              <li>
+                <i class="fas fa-ellipsis-v"></i> Bisalloy® Structural Steel
+              </li>
+              <li><i class="fas fa-ellipsis-v"></i> Bisalloy® Wear Steel</li>
+            </ul>
+            <button id="bisalloy__video" class="video__btn">
+              <i class="fas fa-video"></i>&nbsp; Video
+            </button>
+            <button id="bisalloy__down" class="down__btn">
+              <i class="fas fa-download"></i>&nbsp; Download
+            </button>
+          </article>
+          <section id="bisalloy__slider" class="product__right">
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </section>
+      </section>
+      <!-- Impact -->
+      <section id="impact" class="work__main__section__size">
+        <article id="impact__intro" class="intro">
+          <div id="impact__bg" class="bg"></div>
+          <header
+            class="intro__header"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <h1>Impact</h1>
+          </header>
+          <p
+            id="impact__contents"
+            class="intro__contents"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            Impact Innovations의 콜드 스프레이 시스템(Cold Spray System)은
+            다양한 산업 분야에서 쌓아온 적용한 노하우를 바탕으로 물성 변화 없이
+            제품 표면 코팅 및 적층 가공 기술을 보유한 기업입니다.
+          </p>
+          <div
+            class="scroll"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+          >
+            <p>scroll down<br /><i class="fas fa-caret-down"></i></p>
+          </div>
+        </article>
+        <section id="impact__product" class="product">
+          <article class="product__left">
+            <img
+              id="impact__logo"
+              class="logo"
+              src="../images/work/impact/logo/Impact-Innovations_ ci.png"
+              alt=""
+            />
+            <h2 class="place">Rattenkirchen, Germany</h2>
+            <ul class="list">
+              <li><i class="fas fa-ellipsis-v"></i> EvoCSII System</li>
+              <li><i class="fas fa-ellipsis-v"></i> Compatibility of al</li>
+            </ul>
+            <button id="impact__video" class="video__btn">
+              <i class="fas fa-video"></i>&nbsp; Video
+            </button>
+            <button id="impact__down" class="down__btn">
+              <i class="fas fa-download"></i>&nbsp; Download
+            </button>
+          </article>
+          <section id="impact__slider" class="product__right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </section>
+      </section>
+      <!-- Fabrisonic -->
+      <section id="fabrisonic" class="work__main__section__size">
+        <section id="fabrisonic__intro">
+          <header id="fabrisonic__header" class="intro__header">
+            <h1>Fabrisonic</h1>
+          </header>
+          <p id="fabrisonic__intro__contents">
+            Fabrisonic의 저온 금속 3D 프린팅 기술인 초음파 적층 가공(UAM:
+            Ultrasonic Additive Manufacturing)은 열에 민감한 내장형 센서, 전기
+            장치를 삽입 후 적층 가공이 가능합니다. 이는 각종 항공 부품, 발사체
+            열교환기 제작 등에 도입한 바 있습니다.
+          </p>
+        </section>
+        <section id="fabrisonic__product" class="product">
+          <article class="product__left">
+            <img
+              id="fabrisonic__logo"
+              class="logo"
+              src="../images/work/fabrisonic/logo/fabrisonic ci.png"
+              alt="fabrisonic"
+            />
+            <h2 id="fabrisonic__place" class="place">Columbus, Ohio</h2>
+            <ul id="fabrisonic__list" class="list">
+              <li><i class="fas fa-ellipsis-v"></i> SonicLayer 7200</li>
+              <li><i class="fas fa-ellipsis-v"></i> SonicLayer 4000</li>
+              <li><i class="fas fa-ellipsis-v"></i> SonicLayer 1200</li>
+              <li><i class="fas fa-ellipsis-v"></i> SonicLayer R200</li>
+            </ul>
+            <button id="fabrisonic__video" class="video__btn">
+              <i class="fas fa-video"></i>&nbsp; Video
+            </button>
+            <button id="fabrisonic__down" class="down__btn">
+              <i class="fas fa-download"></i>&nbsp; Download
+            </button>
+          </article>
+          <section id="fabrisonic__slider">
+            <div><h2>No Image</h2></div>
+          </section>
+        </section>
+      </section>
+      <!-- Others -->
+      <section id="others" class="work__main__section__size">
+        <section id="havelsan" class="others__box">
+          <div id="havelsan__header" class="others__header">
+            <img
+              src="../images/work/Havelsan/logo/Havelsan ci.png"
+              alt="Havelsan"
+            />
+            <h2>Ankara, Turkey</h2>
+          </div>
+          <p id="haveslan__contents" class="others__contents">
+            Havelsan은 방위산업 IT 소프트웨어 및 솔루션을 제공하는 터키 공군이
+            설립한 공영 기업입니다. 첨단 레이저 기술을 필두로 항공기 조종
+            시뮬레이팅 시스템 커맨드 컨트롤 시스템(C4ISR), 함정 전투 시스템,
+            감시 정찰 시스템 등을 제공하며 군수 정보 시스템 분야에서 우수한
+            기술력을 자랑하고 있습니다. Havelsan은 유럽항공기구(EASA) 인증 최고
+            등급인 D레벨(Level D) 모의비행장치를 터키 항공에 공급하였고 최신
+            보잉 737 Max, 에어버스 A320 CEO/NEO D레벨 모의 비행장치와 FTD(Flight
+            Training Device)를 합리적인 가격에 납품할 예정입니다
+          </p>
+        </section>
+        <section id="plasan" class="others__box">
+          <div id="plasan__header" class="others__header">
+            <img
+              src="../images/work/plasan/logo/Plasan Logo.jpeg"
+              alt="Plasan"
+            />
+            <h2>Vissenbjerg, Denmark</h2>
+          </div>
+          <p id="plasan__contents" class="others__contents">
+            Plasan은 전투생존성(Survivability)을 높이는 장비방탄 전문기업으로서
+            육상 및 항공 운송수단의 기본 장갑부터 부가장갑까지 기동장비의 방호력
+            향상 부문에 세계 최고 기술력을 보유한 종합 장비방탄 솔루션
+            기업입니다. Plasan의 고경도, 경량화 제품군은 분열 및 파쇄 현상이
+            없으면서도 최대 STANAG level 5, 6의 보호도를 유지하는 고객 맞춤형
+            솔루션을 제공합니다. Plasan은 다음 소재의 제품군을 취급합니다.
+          </p>
+        </section>
+        <section id="tencate" class="others__box">
+          <div id="tencate__header" class="others__header">
+            <img
+              src="../images/work/tencate/logo/tencate ci.png"
+              alt="Tencate"
+            />
+            <h2>Jish, Israel</h2>
+          </div>
+          <p id="tencate__contents" class="others__contents">부가 장갑 제품</p>
+        </section>
+      </section>
     </main>
     <!-- footer -->
     <footer id="footer" class="section__size">
@@ -98,5 +452,14 @@
         </p>
       </div>
     </footer>
+    <!-- Script -->
+    <script src="../js/slider.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>

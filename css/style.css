@@ -1,15 +1,9 @@
 /* Body */
 body {
+  /* background */
   background-color: var(--color-white);
 }
 
-/* Main */
-main {
-  /* flex */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 /* Home */
 #home {
   /* position */
@@ -769,6 +763,8 @@ main {
 
 /* News */
 #news {
+  /* overflow */
+  overflow-x: hidden;
   /* size */
   width: 100vw;
   height: 100%;
@@ -906,7 +902,7 @@ main {
   .news__image {
     /* size */
     width: 90%;
-    height: 40%;
+    height: 45%;
   }
   .news__contents__items > div > h2 {
     /* font */

@@ -43,6 +43,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 body::-webkit-scrollbar {
@@ -85,6 +86,14 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+/* Main */
+main {
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* text area */
@@ -246,7 +255,7 @@ textarea {
 /* Responsive
 ===================================================== */
 /* 738px max */
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 955px) {
   /* Nav */
   #navbar {
     align-items: center;
@@ -261,8 +270,8 @@ textarea {
   .navbar__menu {
     position: absolute;
     top: 25px;
-    left: 50%;
-    transform: translate(-54%, -800px);
+    left: 52%;
+    transform: translate(-50%, -800px);
     /* transition */
     transition: all 400ms ease-in-out;
     /* opacity */
@@ -283,7 +292,7 @@ textarea {
   }
   /* Work part menu height */
   .navbar__menu-work {
-    height: 235px;
+    height: 430px;
   }
   /* About part menu height */
   .navbar__menu-about {
@@ -323,5 +332,12 @@ textarea {
     width: 20px;
     height: 2px;
     cursor: pointer;
+  }
+}
+
+/* 710px */
+@media screen and (max-width: 500px) {
+  .navbar__menu {
+    left: 50%;
   }
 }
