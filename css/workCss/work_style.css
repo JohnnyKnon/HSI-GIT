@@ -477,7 +477,7 @@ body {
   /* border */
   border-top: 1px dotted var(--color-black);
   /* background */
-  background-color: var(--color-white);
+  background-color: var(--color-light-grey);
 }
 
 .others__box {
