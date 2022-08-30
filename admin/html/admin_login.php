@@ -23,29 +23,31 @@
           <h1><i class="fa-solid fa-unlock-keyhole"></i> HSI Admin Sign In</h1>
         </header>
         <!-- Input -->
-        <section class="login__input__box">
-          <div class="login__contents">
-            <label for="admin__id">ID : </label>
-            <input
-              type="text"
-              name="id"
-              placeholder="ID"
-              id="admin__id"
-              required
-            />
-          </div>
-          <div class="login__contents">
-            <label for="admin__pass">Pass : </label>
-            <input
-              type="password"
-              name="pass"
-              placeholder="Password"
-              id="admin__pass"
-              required
-            />
-          </div>
-          <input type="submit" value="Sign In" />
-        </section>
+		<form action="../db/admin_check" method="post">
+			<section class="login__input__box">
+			  <div class="login__contents">
+				<label for="admin__id">ID : </label>
+				<input
+				  type="text"
+				  name="id"
+				  placeholder="ID"
+				  id="admin__id"
+				  required
+				/>
+			  </div>
+			  <div class="login__contents">
+				<label for="admin__pass">Pass : </label>
+				<input
+				  type="password"
+				  name="pass"
+				  placeholder="Password"
+				  id="admin__pass"
+				  required
+				/>
+			  </div>
+			  <input type="submit" value="Sign In" />
+			</section>
+		</form>
       </div>
     </main>
   </body>

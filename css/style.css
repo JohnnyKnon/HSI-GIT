@@ -302,7 +302,7 @@ main {
 
 .history__contents__items h2 {
   /* font */
-  font-size: var(--font-big);
+  font-size: 30px;
 }
 .history__contents__items h3 {
   /* margin */
@@ -314,7 +314,7 @@ main {
     /* max-width */
     max-width: 900px;
     /* size */
-    width: 90%s;
+    width: 90%;
   }
 }
 
@@ -359,7 +359,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .about__link__items {
@@ -403,13 +403,6 @@ main {
   background-position: -40px 0;
 }
 
-.group {
-  /* background */
-  background: url('../images/main/about_bg/groupCard.jpg') no-repeat
-    center/cover;
-  background-position: -100px 0;
-}
-
 .industry {
   /* background */
   background: url('../images/main/about_bg/businessCard.jpg') no-repeat
@@ -444,7 +437,7 @@ main {
   /* background */
   background-color: var(--color-white);
   /* padding */
-  padding: 5px 20px;
+  padding: 9px 20px;
   /* opacity */
   opacity: 0;
   /* visible */
@@ -489,12 +482,9 @@ main {
     /* size */
     width: 90%;
   }
-}
-
-@media screen and (max-width: 677px) {
   .about__link__items {
     /* size */
-    width: 90%;
+    width: 80%;
     height: 300px;
   }
   .intro {
@@ -513,6 +503,7 @@ main {
     background-position: 0px 0;
   }
 }
+
 /* Service */
 #service {
   /* size */
@@ -850,12 +841,12 @@ main {
 
 .yeogie {
   /* background */
-  background: url('/images/main/news/yeogie.png') no-repeat center/cover;
+  background: url('../images/main/news/yeogie.png') no-repeat center/cover;
 }
 
 .simtos {
   /* background */
-  background: url('/images/main/news/simtos.jpg') no-repeat center/cover;
+  background: url('../images/main/news/simtos.jpg') no-repeat center/cover;
 }
 
 .news__contents__items > div > h2 > a {
@@ -971,7 +962,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contact__contents__box > p {
@@ -987,6 +978,17 @@ main {
   font-size: 16px;
   font-weight: var(--weight-bold);
   color: var(--color-dark-blue);
+}
+
+form {
+  /* size */
+  width: 100%;
+  height: 100%;
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact__input__list {
@@ -1068,7 +1070,7 @@ main {
 
 .contact__input__items {
   /* size*/
-  width: 85%;
+  width: 100%;
   /* padding */
   padding: 15px 0;
   /* flex */
@@ -1091,12 +1093,12 @@ main {
 
 #contents__contact {
   /* size */
-  width: 80%;
+  width: 100%;
   height: 200px;
   /* resize */
   resize: none;
   /* padding */
-  padding: 20px;
+  padding: 10px;
 }
 
 /* contacy send */
@@ -1106,7 +1108,7 @@ main {
   font-size: 15px;
   color: var(--color-white);
   /* size */
-  width: 250px;
+  width: 230px;
   height: 40px;
   /* margin */
   margin-left: -10px;
@@ -1125,12 +1127,13 @@ main {
   background-color: var(--color-white);
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 800px) {
   #contact > iframe,
   .contact__contents__box {
     /* max-width */
     max-width: 550px;
   }
+
   .contact__contents__box > p:nth-of-type(2) {
     /* margin */
     margin-top: -10px;
@@ -1141,6 +1144,11 @@ main {
     /* margin */
     margin-left: -40px;
   }
+  .contact__input__items > input,
+  #contact__select {
+    /* size */
+    width: 100%;
+  }
 
   .contact__input__items {
     /* margin */
@@ -1149,21 +1157,11 @@ main {
     padding: 5px 0;
     /* flex */
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .contact__input__list li > label {
     /* text */
-    text-align: center;
-  }
-
-  .contact__input__items > input,
-  #contact__select {
-    /* size */
-    width: 90%;
-  }
-  #contents__contact {
-    /* size */
-    width: 90%;
+    text-align: left;
   }
 }

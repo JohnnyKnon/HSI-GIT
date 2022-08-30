@@ -1,5 +1,6 @@
 @media screen and (max-width: 800px) {
   #industry {
+      /* size */
     width: 100vw;
     height: 1200px;
   }

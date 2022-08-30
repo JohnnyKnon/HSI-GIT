@@ -57,14 +57,14 @@
 .login__input__box {
   /* size */
   width: 100%;
-  height: 80%;
-  /* flex */
+  height:250px;
+ /* flex */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
+}  
 
 .login__contents {
   /* font */
@@ -110,4 +110,3 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-/* admin main */

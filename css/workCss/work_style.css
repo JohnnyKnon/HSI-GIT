@@ -66,8 +66,24 @@ body {
   width: 84%;
 }
 
+.eng-contents {
+  max-width: 500px;
+  /* size */
+  width: 85%;
+}
+
+@media screen and (max-width: 375px) {
+  .eng-contents {
+    max-width: 335px;
+    /* size */
+    width: 100%;
+  }
+}
+
 /* Scroll */
 .scroll {
+  /* size */
+  width: 100%;
   /* font */
   font-weight: var(--weight-bold);
   font-size: var(--font-micro);
@@ -359,125 +375,40 @@ body {
 }
 
 /* Fabrisonic */
-#fabrisonic {
+#fabrisonic__bg {
   /* background */
-  background-color: var(--color-white);
+  background: url(../../images/work/fabrisonic/bg/fabriBG.jpg) no-repeat
+    center/cover;
+  background-attachment: fixed;
 }
 
-#fabrisonic__header {
-  /* max-width */
-  max-width: 1200px;
-  /* size */
-  width: 90%;
-  /* padding */
-  padding-top: 50px;
-  /* border */
-  border-bottom: 1px solid var(--color-black);
-}
-
-#fabrisonic__header h1 {
-  /* text */
-  text-align: center;
-}
-
-#fabrisonic__logo {
-  /* size */
-  width: 250px;
-}
-
-#fabrisonic__place {
-  /* font */
-  color: var(--color-black);
-  /* border */
-  border-color: var(--color-black);
-}
-
-#fabrisonic__list {
-  /* font */
-  color: var(--color-black);
-}
-#fabrisonic__video,
-#fabrisonic__down {
-  /* font */
-  color: var(--color-black);
-  /* border */
-  border-color: var(--color-black);
-}
-
-/* hover */
-#fabrisonic__video:hover,
-#fabrisonic__video:focus {
-  /* font */
-  color: var(--color-white);
+#fabrisonic__slider div:nth-of-type(1) {
   /* background */
-  background-color: var(--color-black);
+  background: url(../../images/work/fabrisonic/products/fabriPR1.jpg) no-repeat
+    center/cover;
 }
-
-#fabrisonic__down {
-  /* font */
-  color: var(--color-white);
+#fabrisonic__slider div:nth-of-type(2) {
   /* background */
-  background-color: var(--color-black);
+  background: url(../../images/work/fabrisonic/products/fabriPR2.jpg) no-repeat
+    center/cover;
 }
-
-/* hover */
-#fabrisonic__down:hover,
-#fabrisonic__down:focus {
-  /* font */
-  color: var(--color-black);
+#fabrisonic__slider div:nth-of-type(3) {
   /* background */
-  background-color: var(--color-white);
+  background: url(../../images/work/fabrisonic/products/fabriPR3.jpg) no-repeat
+    center/cover;
 }
-
-#fabrisonic__intro {
-  /* padding */
-  padding-top: 50px;
-  /* flex */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#fabrisonic__intro__contents {
-  /* max-width */
-  max-width: 1200px;
-  /* text */
-  text-align: justify;
-  line-height: 30px;
-  /* size */
-  width: 90%;
-}
-
-#fabrisonic__slider > div {
-  /* size */
-  width: 400px;
-  height: 400px;
+#fabrisonic__slider div:nth-of-type(4) {
   /* background */
-  background-color: var(--color-black);
-  /* flex */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: url(../../images/work/fabrisonic/products/fabriPR4.jpg) no-repeat
+    center/cover;
 }
 
-/* Fabrisonic Responsive */
-@media screen and (max-width: 940px) {
-  #fabrisonic__slider > div {
-    /* size */
-    width: 300px;
-    height: 300px;
-  }
-}
-
+/* Others */
 #others {
   /* padding */
   padding-top: 130px;
-  /* border */
-  border-top: 1px dotted var(--color-black);
   /* background */
-  background-color: var(--color-light-grey);
+  background-color: var(--color-white);
 }
 
 .others__box {
@@ -542,6 +473,11 @@ body {
   }
   /* impact */
   #impact__bg {
+    /* background */
+    background-attachment: unset;
+  }
+  /* fabrisonic */
+  #fabrisonic__bg {
     /* background */
     background-attachment: unset;
   }
