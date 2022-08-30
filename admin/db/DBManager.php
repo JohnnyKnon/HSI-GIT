@@ -1,8 +1,8 @@
 <?php
-$db_info['host'] = 'db.webffle.com'; 
-$db_info['database'] = 'dbwebffle'; 
-$db_info['user'] ='webffle'; 
-$db_info['password'] = 'minjjang12!@'; 
+$db_info['host'] = 'host'; 
+$db_info['database'] = 'db'; 
+$db_info['user'] ='user'; 
+$db_info['password'] = 'password'; 
 
 try{ 
     $dbo = new PDO('mysql:host='.$db_info['host'].';dbname='.$db_info['database'].';charset=utf8', 
